@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FBFD;
+}
+
+.dashboard{
+    display: flex;
+    overflow: hidden;
+}
+
+.dashboard-sidebar{
+    min-width: 260px;
+    min-height: 100vh;
+    /* border: 1px solid #04e1f2; */
+    background-color: #161a2b;
+}
+
+.dashboard-navbar{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.875rem 1.25rem;
+    position: relative;
+}
+
+.user-container{
+    display: flex;
+}

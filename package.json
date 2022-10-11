@@ -1,0 +1,74 @@
+{
+  "name": "reactproject3",
+  "version": "0.1.0",
+  "home": "www.eyekontact.com.ng",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^31.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.3",
+    "@fancyapps/ui": "^4.0.26",
+    "@googlemaps/google-maps-services-js": "^3.3.11",
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.6",
+    "@reduxjs/toolkit": "^1.7.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@tinymce/tinymce-react": "^3.13.0",
+    "@types/ckeditor__ckeditor5-core": "^28.0.10",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.19",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.2",
+    "axios": "^0.25.0",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.2",
+    "chart.js": "^3.7.0",
+    "g": "^2.0.1",
+    "jest-editor-support": "^30.0.2",
+    "moment": "^2.29.1",
+    "netlify-cli": "^8.8.2",
+    "plyr": "^3.6.12",
+    "postcss": "^8.4.5",
+    "pure-react-carousel": "^1.27.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-use": "^17.3.2",
+    "redux-persist": "^6.0.0",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build  --max-old_space_size=10000",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.1.9",
+    "@types/ckeditor__ckeditor5-build-classic": "^29.0.1"
+  }
+}

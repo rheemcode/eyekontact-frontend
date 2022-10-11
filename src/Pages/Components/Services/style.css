@@ -1,0 +1,9 @@
+.service-card{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service-card:hover .service-img{
+    transition: all .3s ease-out;
+    transform: scale(1.2)
+}
