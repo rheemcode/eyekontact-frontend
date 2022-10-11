@@ -25,7 +25,7 @@ const Footer = () => {
     }
 
     return (
-        <div className="footer bg-dark text-white border-t-2 border-gray">
+        <div className="footer bg-e_dark text-white border-t-2 border-gray">
             <SuccessModal show={showSuccessModal} message={"Subscribed to newsletter!"} onCloseFn={setShowSuccessModal} />
             <div className='flex flex-col md:flex-row lg:flex-row justify-around py-24 px-12 '>
                 <div className="copyright-area mb-12">

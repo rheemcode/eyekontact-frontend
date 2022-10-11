@@ -186,7 +186,7 @@ const AddUser = () => {
 
                                     </div>
                                     <div>
-                                        <p className='error-msg my-2 text-red text-center'>
+                                        <p className='error-msg my-2 text-e_red text-center'>
                                             {error.message}
                                         </p>
                                         <button type="submit"
@@ -195,7 +195,7 @@ const AddUser = () => {
                                             Add User
                                         </button>
                                         <div>
-                                            <p onClick={closeModal} className="text-center mx-auto text-red mt-4 block cursor-pointer">
+                                            <p onClick={closeModal} className="text-center mx-auto text-e_red mt-4 block cursor-pointer">
                                                 Cancel
                                             </p>
                                         </div>
@@ -372,7 +372,7 @@ export const EditUser = (props: { userData: UserData }) => {
                                             Continue
                                         </button>
                                         <div>
-                                            <p onClick={closeModal} className="mx-auto text-center text-red mt-4 block cursor-pointer">
+                                            <p onClick={closeModal} className="mx-auto text-center text-e_red mt-4 block cursor-pointer">
                                                 Cancel
                                             </p>
                                         </div>
@@ -469,7 +469,7 @@ const DeleteUser = (props: { userData: UserData }) => {
                                     Continue
                                 </button>
                                 <div>
-                                    <button onClick={closeModal} className="mx-auto text-center text-red mt-4 block">
+                                    <button onClick={closeModal} className="mx-auto text-center text-e_red mt-4 block">
                                         Cancel
                                     </button>
                                 </div>

@@ -23,12 +23,12 @@ const NavLinkDropdown: React.FC<NavLinkDropdownProps> = (props) => {
         }
     }
     return (
-        <div ref={ref} className='navlink-dropdown bg-white shadow absolute left-0 top-12'>
+        <div ref={ref} className='max-h-[80vh] overflow-y-auto navlink-dropdown bg-white shadow absolute left-0 top-12'>
             <div className="rounded-lg">
                 <div className="flex flex-col">
                     {
                         props.links.map((navlink, index) =>
-                            <Link key={index} onClick={toggleDropdown} className="link pl-4 py-3 border-gray-light border-b text-black text-sm font-medium link" to={"/" + navlink.url.toLowerCase()}>{navlink.title}</Link>
+                            <Link key={index} replace={true} onClick={toggleDropdown} className="link pl-4 py-3 border-gray-light border-b text-black text-sm font-medium link" to={"/" + navlink.url.toLowerCase()}>{navlink.title}</Link>
                         )
                     }
                 </div>
@@ -120,28 +120,6 @@ const NavBarNav: React.FC<NavBarNavProps> = (props) => {
                 props.links.map((navlink, index) => <NavLink mobile={props.mobile} {...navlink} key={index} />)
 
             }
-            {
-                !userState.isLogin && props.mobile && <NavLink mobile={true} url="login" title="SIGN IN" className='text-red' />
-
-            }
-            {
-                !userState.isLogin && props.mobile && <NavLink mobile={true} url="register" title="SIGN UP" className='text-red' />
-
-            }
-            {
-                userState.isLogin && props.mobile && <div className='flex px-3 py-2'>
-                    <UserIcon width={24} className="text-white" />
-                    <span className="text-sm ml-4 font-bold text-red">  {userState.userData.firstname?.toUpperCase() + " " + userState.userData.lastname?.toUpperCase()}</span>
-                </div>
-            }
-            {
-                userState.isLogin && props.mobile && <div className='py-1 px-3 mt-3'>
-                    <button className="w-full py-3 rounded bg-red text-white font-medium" onClick={(e) => { navigate("/", { replace: true }); dispatch(logoutUser()); toggleNavbar(e) }}>
-                        Logout
-                    </button>
-                </div>
-            }
-
         </div>
     )
 }
@@ -189,27 +167,27 @@ const Profile = () => {
                         {userState.isLogin &&
                             <>
                                 <div className='py-1'>
-                                    <h3 className='text-xs font-bold text-red uppercase'>
+                                    <h3 className='text-xs font-bold text-e_red uppercase'>
                                         {userState.userData.firstname?.toUpperCase() + " " + userState.userData.lastname?.toUpperCase()}
                                     </h3>
                                 </div>
                                 <div className='py-1'>
                                     {userState.userData.role?.toLowerCase() != "user" ?
                                         <Link to="/dashboard/profile">
-                                            <h3 className='text-xs font-bold hover:text-red uppercase'>
+                                            <h3 className='text-xs font-bold hover:text-e_red uppercase'>
                                                 Dashboard
                                             </h3>
                                         </Link>
                                         :
                                         <Link to="/profile">
-                                            <h3 className='text-xs font-bold hover:text-red uppercase'>
+                                            <h3 className='text-xs font-bold hover:text-e_red uppercase'>
                                                 Profile
                                             </h3>
                                         </Link>
                                     }
                                 </div>
                                 <div className='py-1'>
-                                    <button className="w-full py-1 rounded bg-red text-white font-medium" onClick={() => dispatch(logoutUser())}>
+                                    <button className="w-full py-1 rounded bg-e_red text-white font-medium" onClick={() => dispatch(logoutUser())}>
                                         Logout
                                     </button>
                                 </div>
@@ -242,15 +220,15 @@ const NavBar: React.FC<NavBarProps> = (props) => {
     const ref = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLDivElement>;
     const navbarMobileRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLDivElement>;
 
-    useEffect(() => {
-        document.addEventListener("wheel", (event: WheelEvent) => {
-            if (!ref.current) return;
-            if (event.view)
-                event.view?.scrollY > 2
-                    ? ref.current.classList.add("navbar-custom") :
-                    ref.current.classList.remove("navbar-custom");
-        })
-    }, []);
+    // useEffect(() => {
+    //     document.addEventListener("wheel", (event: WheelEvent) => {
+    //         if (!ref.current) return;
+    //         if (event.view)
+    //             event.view?.scrollY > 2
+    //                 ? ref.current.classList.add("navbar-custom") :
+    //                 ref.current.classList.remove("navbar-custom");
+    //     })
+    // }, []);
 
     const toggleNavbar = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         e.preventDefault();
@@ -259,9 +237,9 @@ const NavBar: React.FC<NavBarProps> = (props) => {
     }
 
     return (
-        <div ref={ref} className="w-screen mx-auto px-4 sm:px-6 navbar-container fixed z-20">
+        <div ref={ref} className="w-screen navbar-custom mx-auto px-4 sm:px-6 navbar-container fixed z-20">
             <div className="navbar px-2 lg:px-4">
-                <div className="flex justify-between items-center py-6">
+                <div className="flex justify-between items-center py-4">
                     <Link to="/">
                         <AppLogo icon={props.icon} />
                     </Link>
@@ -271,9 +249,6 @@ const NavBar: React.FC<NavBarProps> = (props) => {
                     </div>
                     <div className="hidden md:flex">
                         <NavBarNav mobile={false} links={props.links} />
-                        <div className="user-profile">
-                            <Profile />
-                        </div>
                     </div>
 
                     <div ref={navbarMobileRef} className="nav-sm hidden shadow">

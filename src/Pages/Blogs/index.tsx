@@ -195,7 +195,7 @@ const SingleBlog: React.FC<BlogProps> = (props) => {
                     <img src={props.thumbnail} alt="" />
                 </div>
                 <div className="flex flex-col lg:flex-row gap-1 px-6">
-                    <div className="inline-flex p-1 px-3 text-white bg-red mr-2 rounded-[17px]  ">
+                    <div className="inline-flex p-1 px-3 text-white bg-e_red mr-2 rounded-[17px]  ">
                         <UserIcon width={14} className="mr-2" />
                         <span className="text-sm font-bold self-center">
                             {
@@ -206,7 +206,7 @@ const SingleBlog: React.FC<BlogProps> = (props) => {
 
                     <div className="inline-flex p-2 text-coolGray-900 mr-2 rounded-lg">
 
-                        <CalendarIcon width={14} className="text-red mr-2" />
+                        <CalendarIcon width={14} className="text-e_red mr-2" />
                         <span className="text-sm font-bold">
                             {
                                 moment(props.date).format("dddd, MMMM YYYY")
@@ -215,7 +215,7 @@ const SingleBlog: React.FC<BlogProps> = (props) => {
                     </div>
 
                     <div className="inline-flex p-2 text-coolGray-900 mr-2 rounded-lg">
-                        <TagIcon width={14} className="text-red mr-2" />
+                        <TagIcon width={14} className="text-e_red mr-2" />
                         <Link to={`/blog?category=${props.category?.toLowerCase().split(" ").join("-")}`}>
                             <span className="text-sm font-bold">
                                 {
@@ -320,7 +320,7 @@ const BlogPreview: React.FC<BlogProps> = (props) => {
                     <img src={props.thumbnail} alt="" />
                 </div>
                 <div className="flex flex-col lg:flex-row gap-1 px-6">
-                    <div className="inline-flex p-1 px-3 text-white bg-red mr-2 rounded-[17px]  ">
+                    <div className="inline-flex p-1 px-3 text-white bg-e_red mr-2 rounded-[17px]  ">
                         <UserIcon width={14} className="mr-2 self-center" />
                         <span className="text-sm font-bold">
 
@@ -332,7 +332,7 @@ const BlogPreview: React.FC<BlogProps> = (props) => {
 
                     <div className="inline-flex p-2 text-coolGray-900 mr-2 rounded-lg">
 
-                        <CalendarIcon width={14} className="text-red mr-2" />
+                        <CalendarIcon width={14} className="text-e_red mr-2" />
                         <span className="text-sm font-bold">
                             {
                                 moment(props.date).format("dddd, MMMM YYYY")
@@ -341,7 +341,7 @@ const BlogPreview: React.FC<BlogProps> = (props) => {
                     </div>
 
                     <div className="inline-flex p-2 text-coolGray-900 mr-2 rounded-lg">
-                        <TagIcon width={14} className="text-red mr-2" />
+                        <TagIcon width={14} className="text-e_red mr-2" />
                         <span className="text-sm font-bold">
                             {
                                 props.category
@@ -358,7 +358,7 @@ const BlogPreview: React.FC<BlogProps> = (props) => {
                 <div className="pb-6 px-6">
                     <div className="mt-6 text-slate-500" dangerouslySetInnerHTML={{ __html: (props.data as string).substring(0, 260) + "..." }} />
                     <div className="mt-4">
-                        <Link replace to={`/blog?category=${props.category?.toLowerCase().split(" ").join("-")}&title=${props.title?.toLowerCase().split(" ").join("-")}`} className="text-red font-bold">
+                        <Link replace to={`/blog?category=${props.category?.toLowerCase().split(" ").join("-")}&title=${props.title?.toLowerCase().split(" ").join("-")}`} className="text-e_red font-bold">
                             READ MORE <ArrowRightIcon className="ml-2 inline" width={14} />
                         </Link>
                     </div>

@@ -19,7 +19,7 @@ declare interface ProgressBarProps {
 export const ProgressBar: React.FC<ProgressBarProps> = (props) => {
     return (
         <div className="progress w-full bg-white" style={{ height: "6px" }}>
-            <div className="proress-bar bg-red h-full" style={{ transition: "width 0.3s ease-out", width: `${props.percentage}%`, backgroundColor: props.color }}></div>
+            <div className="proress-bar bg-e_red h-full" style={{ transition: "width 0.3s ease-out", width: `${props.percentage}%`, backgroundColor: props.color }}></div>
         </div>
     )
 }
@@ -96,7 +96,7 @@ const ExpertSection: React.FC<ExpertSectionState> = (props) => {
                             <h1
 
                                 id="expertHeading2"
-                                className="text-red  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
+                                className="text-e_red  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
                                 dangerouslySetInnerHTML={{ __html: props.heading2 }}
                             />
                         </div>

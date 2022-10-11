@@ -37,7 +37,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
     useEffect(() => {
         carousel.current = new BsCarousel(carouselRef.current, {
             interval: 5000,
-            wrap: true
+            wrap: true,
         })
         carousel.current.cycle();
         return () => {

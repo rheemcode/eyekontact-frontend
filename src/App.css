@@ -140,7 +140,7 @@ body *::-webkit-scrollbar-thumb:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15%;
+    width: 5%;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -175,8 +175,8 @@ body *::-webkit-scrollbar-thumb:active {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100% 100%;

@@ -138,7 +138,7 @@ const Services = () => {
                             Looking to create an outdoor display that is truly iconic and custom made to your brand?
                             Then reach out to us and we can help you achieve the virality that you seek.
                         </p>
-                        <Link to="contact" className="py-3 px-6 bg-red mt-5 inline-block font-bold text-white">CONTACT US</Link>
+                        <Link to="contact" className="py-3 px-6 bg-e_red mt-5 inline-block font-bold text-white">CONTACT US</Link>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@
     z-index: 10;
 }
 
-
+/* 
 .banner-bg::before{
     position: absolute;
     content: "";
@@ -22,7 +22,7 @@
     height: 100%;
     z-index: 1;
     background: linear-gradient(to right, #000 0%, #000000c7 50%, #0000 100%);
-}
+} */
 
 .left-section, .right-section, .notice-section{
     background-position: center center;

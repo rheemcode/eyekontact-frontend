@@ -106,7 +106,7 @@ const SignIn = () => {
                                 Sign in
                             </button>
                         </div>
-                        <p className='error-msg text-red text-center'>
+                        <p className='error-msg text-e_red text-center'>
                             {error.message}
                         </p>
                     </form>

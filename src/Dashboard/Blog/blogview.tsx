@@ -361,7 +361,7 @@ const DeleteBlog: React.FC<BlogData> = (props) => {
                                     Continue
                                 </button>
                                 <div>
-                                    <button onClick={closeModal} className="mx-auto text-center text-red mt-4 block">
+                                    <button onClick={closeModal} className="mx-auto text-center text-e_red mt-4 block">
                                         Cancel
                                     </button>
                                 </div>

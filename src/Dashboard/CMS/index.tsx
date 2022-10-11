@@ -166,7 +166,7 @@ const ServiceSection = React.forwardRef<HTMLDivElement, ServiceSectionProps>((pr
     return (
         <div ref={elRef} className="service-section py-28 px-6 lg:px-24 mt-12 text-center">
             <div>
-                <h3 id="serviceHeading" className="text-red font-medium" contentEditable
+                <h3 id="serviceHeading" className="text-e_red font-medium" contentEditable
                     dangerouslySetInnerHTML={{ __html: props.heading }}
                 />
                 <h1 id="serviceHeading2" className="text-6xl font-extrabold" contentEditable
@@ -318,7 +318,7 @@ const ExpertSection = React.forwardRef<HTMLDivElement, ExpertSectionProps>((prop
                             <h1
                                 contentEditable
                                 id="expertHeading2"
-                                className="text-red  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
+                                className="text-e_red  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
                                 dangerouslySetInnerHTML={{ __html: props.heading2 }}
                             />
                         </div>
@@ -412,7 +412,7 @@ const TestimonialSection = React.forwardRef<HTMLDivElement, TestimonialSectionPr
     return (
         <div ref={elRef} className="client-testimonial p-12 mt-16">
             <div className="px:3 md:px-8 lg:px-24 flex">
-                <div className="bg-red inline-block py-2 md:py-8 pl-2 md:pl-6 pr-6 md:pr-24 rounded-lg">
+                <div className="bg-e_red inline-block py-2 md:py-8 pl-2 md:pl-6 pr-6 md:pr-24 rounded-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="w-24 h-24 lg:w-40 lg:h-40" viewBox="0 0 16 16">
                         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
                     </svg>
@@ -489,7 +489,7 @@ const BlogInsightSection = React.forwardRef<HTMLDivElement, BlogInsightsSectionP
                 <h3
                     contentEditable
                     id="insightsHeading"
-                    className="text-red font-medium uppercase"
+                    className="text-e_red font-medium uppercase"
                     dangerouslySetInnerHTML={{ __html: props.heading }}
                 />
 
@@ -543,7 +543,7 @@ const WhoWeAreSection = React.forwardRef<HTMLDivElement, WhoWeAreSectionProps>((
                         <h1
                             contentEditable
                             id="whoWeAreAttention"
-                            className="text-red lg:text-4xl mr-4 md:text-3xl sm:text-4xl text-3xl py-6 font-extrabold mb-4"
+                            className="text-e_red lg:text-4xl mr-4 md:text-3xl sm:text-4xl text-3xl py-6 font-extrabold mb-4"
                             dangerouslySetInnerHTML={{ __html: props.attention }}
                         />
 
@@ -560,7 +560,7 @@ const WhoWeAreSection = React.forwardRef<HTMLDivElement, WhoWeAreSectionProps>((
 
                         <div className="flex gap-12 lg:flex-row md:flex-row sm:flex-col flex-col justify-between">
                             <div>
-                                <span ref={null} className="text-4xl lg:text-3xl text-red font-bold">{100}K</span>
+                                <span ref={null} className="text-4xl lg:text-3xl text-e_red font-bold">{100}K</span>
                                 <p
                                     id="adsPlaced"
                                     contentEditable
@@ -569,13 +569,13 @@ const WhoWeAreSection = React.forwardRef<HTMLDivElement, WhoWeAreSectionProps>((
                                 />
                             </div>
                             <div>
-                                <span ref={null} className="text-4xl lg:text-3xl text-red font-bold">{100}M</span>
+                                <span ref={null} className="text-4xl lg:text-3xl text-e_red font-bold">{100}M</span>
                                 <p contentEditable id="monthlyReach" className="text-sm"
                                     dangerouslySetInnerHTML={{ __html: props.monthlyReach }}
                                 />
                             </div>
                             <div>
-                                <span ref={null} className="text-4xl lg:text-3xl text-red font-bold">{100}+</span>
+                                <span ref={null} className="text-4xl lg:text-3xl text-e_red font-bold">{100}+</span>
                                 <p contentEditable id="citiesCovered" className="text-sm"
                                     dangerouslySetInnerHTML={{ __html: props.citiesCovered }} />
                             </div>
@@ -619,7 +619,7 @@ const BrandNoticeSection = React.forwardRef<HTMLDivElement, BrandNoticeSectionPr
                     className="font-extrabold text-xl mt-4"
                     dangerouslySetInnerHTML={{ __html: props.heading2 }}
                 />
-                <Link to="#" className="py-3 px-6 bg-red mt-5 inline-block font-bold text-white">CONTACT US</Link>
+                <Link to="#" className="py-3 px-6 bg-e_red mt-5 inline-block font-bold text-white">CONTACT US</Link>
             </div>
         </div>
     )
@@ -855,7 +855,7 @@ const Home = () => {
                                     id="serviceLink"
                                     contentEditable
                                     dangerouslySetInnerHTML={{ __html: pageContent.landingServiceLink1 }}
-                                    className="inline-flex items-center justify-center px-12 py-3 text-white bg-red text-base font-medium"
+                                    className="inline-flex items-center justify-center px-12 py-3 text-white bg-e_red text-base font-medium"
                                 />
                                 {/* View Our Services
                         </a> */}
@@ -885,7 +885,7 @@ const Home = () => {
                             <div className="mt-12 inline-flex rounded-md shadow">
                                 <a href="#"
                                     id="serviceLink2"
-                                    className="inline-flex items-center justify-center px-12 py-3 text-white bg-red text-base font-medium"
+                                    className="inline-flex items-center justify-center px-12 py-3 text-white bg-e_red text-base font-medium"
                                     dangerouslySetInnerHTML={{ __html: pageContent.landingServiceLink2 }}
                                 />
                                 {/* View Our Services
@@ -1082,7 +1082,7 @@ const About = () => {
                             <h1
                                 contentEditable
                                 id="aboutHeading"
-                                className="text-red font-bold text-3xl mb-6"
+                                className="text-e_red font-bold text-3xl mb-6"
                                 dangerouslySetInnerHTML={{ __html: pageContent.whoWeAreSection.heading }}
                             />
                             <p contentEditable id="aboutDescription" className="text-gray mb-4"
@@ -1097,7 +1097,7 @@ const About = () => {
                                 dangerouslySetInnerHTML={{ __html: pageContent.whoWeAreSection.description3 }}
                             />
 
-                            <a href="#" className="py-2 px-6 bg-red mt-5 inline-block font-bold text-white">GET IN TOUCH</a>
+                            <a href="#" className="py-2 px-6 bg-e_red mt-5 inline-block font-bold text-white">GET IN TOUCH</a>
                             <div className="flex mt-12 flex-col lg:flex-row">
                                 <div className="mission pr-4">
                                     <h2 contentEditable id="missionHeading" className="font-bold text-xl mb-3"

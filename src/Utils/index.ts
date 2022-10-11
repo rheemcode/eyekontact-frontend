@@ -309,3 +309,12 @@ export const calculateMonthlyOrderAmount = (ordersData: OrderData[], productsDat
 
     return monthlyTotal;
 }
+
+export const getImage = (name: string) => {
+    return process.env.PUBLIC_URL + "/images/" + name;
+}
+
+
+export const getIcon = (name: string) => {
+    return process.env.PUBLIC_URL + "/icons/" + name;
+} 

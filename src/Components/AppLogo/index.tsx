@@ -5,8 +5,11 @@ declare interface AppLogoProps {
 
 const AppLogo: React.FC<AppLogoProps> = (props) => {
     return (
-        <div className="app-logo">
+        <div className="app-logo flex items-center gap-2">
             <img className="h-8 w-auto sm:h-10" src={props.icon} alt="" />
+            <span className="text-xl font-bold text-e_red ">
+                Eyekontact
+            </span>
         </div>
     )
 }

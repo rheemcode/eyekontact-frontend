@@ -169,7 +169,7 @@ const AddOrder = () => {
                                             />
                                         </div>
                                         <div>
-                                            <p className='error-msg my-2 text-red text-center'>
+                                            <p className='error-msg my-2 text-e_red text-center'>
                                                 {error.message}
                                             </p>
                                             <button
@@ -178,7 +178,7 @@ const AddOrder = () => {
                                                 Add Order
                                             </button>
                                             <div>
-                                                <p onClick={closeModal} className="cursor-pointer text-center mx-auto text-red mt-4 block">
+                                                <p onClick={closeModal} className="cursor-pointer text-center mx-auto text-e_red mt-4 block">
                                                     Cancel
                                                 </p>
                                             </div>
@@ -329,7 +329,7 @@ const EditOrder = (props: { orderData: OrderData }) => {
                                             />
                                         </div>
                                         <div>
-                                            <p className='error-msg my-2 text-red text-center'>
+                                            <p className='error-msg my-2 text-e_red text-center'>
                                                 {error.message}
                                             </p>
                                             <button
@@ -338,7 +338,7 @@ const EditOrder = (props: { orderData: OrderData }) => {
                                                 Process
                                             </button>
                                             <div>
-                                                <p onClick={closeModal} className="text-center cursor-pointer mx-auto text-red mt-4 block">
+                                                <p onClick={closeModal} className="text-center cursor-pointer mx-auto text-e_red mt-4 block">
                                                     Cancel
                                                 </p>
                                             </div>
@@ -433,7 +433,7 @@ const DeleteOrder = (props: { orderData: OrderData }) => {
                                     Continue
                                 </button>
                                 <div>
-                                    <button onClick={closeModal} className="mx-auto text-center text-red mt-4 block">
+                                    <button onClick={closeModal} className="mx-auto text-center text-e_red mt-4 block">
                                         Cancel
                                     </button>
                                 </div>

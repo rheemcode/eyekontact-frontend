@@ -144,7 +144,7 @@ const EditUser = (props: { userData: UserData }) => {
                                             Continue
                                         </button>
                                         <div>
-                                            <p onClick={closeModal} className="mx-auto text-center text-red mt-4 block cursor-pointer">
+                                            <p onClick={closeModal} className="mx-auto text-center text-e_red mt-4 block cursor-pointer">
                                                 Cancel
                                             </p>
                                         </div>

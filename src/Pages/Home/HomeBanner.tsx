@@ -20,50 +20,94 @@ const HomeBanner = () => {
                     <Slide index={0}> */}
             <Carousel>
                 <CarouselItem className='active'>
-                    <div className="banner-bg relative px-2 lg:px-24" style={{ backgroundImage: `url(${pageContent.landingBg1})` }}>
-                        <div className="flex relative">
-                            <div className="pt-24 pb-32 container pl-3 lg:pl-10 text-white z-10">
-                                <div className="relative lg:w-11/12 overflow-hidden">
-                                    <h1 id="landingHeader1" className="text-5xl lg:text-7xl font-extrabold landing-header"
+                    <div className="relative flex h-screen items-center justify-center">
+                        <div className='absolute h-screen'>
+                            <img className='w-full md:h-auto h-full object-cover' src={process.env.PUBLIC_URL + "/images/01.jpg"} alt="" />
+                            <div className="absolute top-0 w-full h-full bg bg-opacity-80">
+                            </div>
+                        </div>
+                        <div className='relative z-10'>
+                            <div className="text-center">
+                                <h1 className="md:text-7xl text-5xl text-white font-extrabold">Eyekontact <span className='text-e_red '> Limited </span></h1>
+                                <h3 className="text-4xl mt-3 text-white font-bold uppercase ">Think Iconic, <span className='text-e_yellow'>Think Eyekontact</span></h3>
 
-                                        dangerouslySetInnerHTML={{ __html: pageContent.landingHeader1 }} />
-                                    {/* Eyekontact Outdoor Advertising
-                            </h1> */}
-                                </div>
-                                <div className="mt-12 inline-flex rounded-md shadow">
-                                    <a href="/services"
-                                        id="serviceLink"
+                                <hr className='w-4/12 block mx-auto my-12 border-t-[2px]' />
 
-                                        dangerouslySetInnerHTML={{ __html: pageContent.landingServiceLink1 }}
-                                        className="inline-flex items-center justify-center px-12 py-3 text-white bg-red text-base font-medium"
-                                    />
-                                    {/* View Our Services
-                        </a> */}
+                                <div className="mt-4">
+                                    <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                        overview video
+                                    </button>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </CarouselItem>
                 <CarouselItem>
-                    <div className="banner-bg relative px-2 lg:px-24" style={{ backgroundImage: `url(${pageContent.landingBg2})` }}>
-
-                        <div className="flex relative">
-                            <div className="pt-24 pb-32 container pl-3 lg:pl-10 text-white z-10">
-                                <div className="relative lg:w-11/12 overflow-hidden">
-                                    <h1 className="text-5xl lg:text-7xl font-extrabold landing-header" id="landing-header-2"
-
-                                        dangerouslySetInnerHTML={{ __html: pageContent.landingHeader2 }}
-                                    />
-
-                                </div>
-                                <div className="mt-12 inline-flex rounded-md shadow">
-                                    <a href="#"
-                                        id="landing-service-link2"
-                                        className="inline-flex items-center justify-center px-12 py-3 text-white bg-red text-base font-medium"
-                                        dangerouslySetInnerHTML={{ __html: pageContent.landingServiceLink2 }}
-                                    />
-                                </div>
+                    <div className="relative flex h-screen items-end  justify-end">
+                        <div className='absolute h-screen'>
+                            <img className='w-full md:h-auto h-full object-cover' src={process.env.PUBLIC_URL + "/images/02.jpg"} alt="" />
+                            <div className="absolute top-0 w-full h-full bg bg-opacity-80">
                             </div>
+                        </div>
+                        <div className='relative z-10'>
+                            <div className="text-right mb-20 mr-20">
+                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                    overview video
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </CarouselItem>
+                <CarouselItem>
+                    <div className="relative flex h-screen items-end  justify-end">
+                        <div className='absolute h-screen'>
+                            <img className='w-full md:h-auto h-full object-cover' src={process.env.PUBLIC_URL + "/images/03.jpg"} alt="" />
+                            <div className="absolute top-0 w-full h-full bg bg-opacity-80">
+                            </div>
+                        </div>
+                        <div className='relative z-10'>
+                            <div className="text-right mb-20 mr-20">
+                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                    overview video
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </CarouselItem>
+                <CarouselItem>
+                    <div className="relative flex h-screen items-end  justify-end">
+                        <div className='absolute h-screen'>
+                            <img className='w-full md:h-auto h-full object-cover' src={process.env.PUBLIC_URL + "/images/04.jpg"} alt="" />
+                            <div className="absolute top-0 w-full h-full bg bg-opacity-80">
+                            </div>
+                        </div>
+                        <div className='relative z-10'>
+                            <div className="text-right mb-20 mr-20">
+                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                    overview video
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </CarouselItem>
+                <CarouselItem>
+                    <div className="relative flex h-screen items-end  justify-end">
+                        <div className='absolute h-screen'>
+                            <img className='w-full md:h-auto h-full object-cover' src={process.env.PUBLIC_URL + "/images/05.jpg"} alt="" />
+                            <div className="absolute top-0 w-full h-full bg bg-opacity-80">
+                            </div>
+                        </div>
+                        <div className='relative z-10'>
+                            <div className="text-right mb-20 mr-20">
+                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                    overview video
+                                </button>
+                            </div>
+
                         </div>
                     </div>
                 </CarouselItem>

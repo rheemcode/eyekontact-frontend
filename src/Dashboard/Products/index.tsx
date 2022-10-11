@@ -301,7 +301,7 @@ const AddProduct = () => {
 
                                     </div>
                                     <div>
-                                        <p className='error-msg my-2 text-red text-center'>
+                                        <p className='error-msg my-2 text-e_red text-center'>
                                             {error.message}
                                         </p>
                                         <button
@@ -311,7 +311,7 @@ const AddProduct = () => {
                                             Add Product
                                         </button>
                                         <div>
-                                            <p onClick={closeModal} className="text-center mx-auto text-red mt-4 block cursor-pointer">
+                                            <p onClick={closeModal} className="text-center mx-auto text-e_red mt-4 block cursor-pointer">
                                                 Cancel
                                             </p>
                                         </div>
@@ -620,7 +620,7 @@ const EditProduct = (props: { productData: ProductData }) => {
 
                                     </div>
                                     <div>
-                                        <p className='error-msg my-2 text-red text-center'>
+                                        <p className='error-msg my-2 text-e_red text-center'>
                                             {error.message}
                                         </p>
                                         <button
@@ -629,7 +629,7 @@ const EditProduct = (props: { productData: ProductData }) => {
                                             Continue
                                         </button>
                                         <div>
-                                            <p onClick={closeModal} className="text-center mx-auto text-red mt-4 block cursor-pointer">
+                                            <p onClick={closeModal} className="text-center mx-auto text-e_red mt-4 block cursor-pointer">
                                                 Cancel
                                             </p>
                                         </div>
@@ -725,7 +725,7 @@ const DeleteProduct = (props: { productData: ProductData }) => {
                                     Continue
                                 </button>
                                 <div>
-                                    <button onClick={closeModal} className="mx-auto text-center text-red mt-4 block">
+                                    <button onClick={closeModal} className="mx-auto text-center text-e_red mt-4 block">
                                         Cancel
                                     </button>
                                 </div>

@@ -99,47 +99,47 @@ const Checkout = () => {
         <div className="checkout" ref={ref}>
             <SuccessModal show={showSuccessModal} message={"Order book successfully!"} onCloseFn={setShowSuccessModal} />
             <ErrorModal show={showErrorModal} message={"Couldn't book order right now!"} onCloseFn={setShowErrorModal} />
-            <PageBanner title={productData?.productname as string} path="Products" />
+            <PageBanner title={"Booking"} path="Products" />
             <div className="lg:p-12 p-4">
-                <h1 className="font-bold text-3xl text-center text-red">Book {productData?.productname}</h1>
-                <div className="flex lg:flex-row flex-col gap-12 mt-12 lg:px-12">
-                    <div className="lg:w-6/12">
-                        <div className="w-full mb-8">
-                            <img onClick={handleViewImages} className="a aspect-video img product-img cursor-pointer w-full h-[auto]" src={productimages.current[0]} alt="" />
+                <h1 className="font-bold text-3xl text-center text-red">Book A Product</h1>
+                <div className="flex mt-12 lg:px-12 px-6">
+                    {/*<>
+                        <div className="lg:w-6/12">
+                            <div className="w-full mb-8">
+                                <img onClick={handleViewImages} className="a aspect-video img product-img cursor-pointer w-full h-[auto]" src={productimages.current[0]} alt="" />
+                            </div>
+                            <span className="text-sm text-stone-9">
+                                Name:
+                            </span>
+                            <h1 className="mb-4 text-xl font-bold">
+                                {
+                                    productData?.productname
+                                }
+                            </h1>
+                            <span className="text-sm text-stone-9">
+                                Location:
+                            </span>
+                            <h1 className="mb-4 text-xl font-bold">
+                                {
+                                    productData?.productlocation
+                                }
+                            </h1>
+                            <span className="text-sm text-stone-9">
+                                Category:
+                            </span>
+                            <h1 className="mb-4 text-xl font-bold">
+                                {
+                                    productData?.productcategory
+                                }
+                            </h1>
+                            <span className="text-sm text-stone-9">
+                                Description:
+                            </span>
+                           
+                            </p>
                         </div>
-                        <span className="text-sm text-stone-9">
-                            Name:
-                        </span>
-                        <h1 className="mb-4 text-xl font-bold">
-                            {
-                                productData?.productname
-                            }
-                        </h1>
-                        <span className="text-sm text-stone-9">
-                            Location:
-                        </span>
-                        <h1 className="mb-4 text-xl font-bold">
-                            {
-                                productData?.productlocation
-                            }
-                        </h1>
-                        <span className="text-sm text-stone-9">
-                            Category:
-                        </span>
-                        <h1 className="mb-4 text-xl font-bold">
-                            {
-                                productData?.productcategory
-                            }
-                        </h1>
-                        <span className="text-sm text-stone-9">
-                            Description:
-                        </span>
-                        <p className="mb-6">
-                            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus non ligula
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus non ligula */}
-                        </p>
-                    </div>
-                    <div className="lg:w-6/12 h-full">
+                            </>*/}
+                    <div className="lg:w-8/12 h-full mx-auto">
                         <div className="stic sticky top-0">
                             <form action="" >
                                 <div>
