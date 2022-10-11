@@ -99,14 +99,14 @@ const Home = () => {
                     </div>
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img1.JPG")} alt="" />
+                            <img className='h-full w-full object-cover' src={getImage("img1.jpg")} alt="" />
                         </div>
                     </div>
                 </div>
                 <div className="flex md:flex-row flex-col-reverse">
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img3.JPG")} alt="" />
+                            <img className='h-full w-full object-cover' src={getImage("img3.jpg")} alt="" />
                         </div>
                     </div>
                     <div className='md:w-6/12 px-8 py-4 self-center'>
@@ -148,7 +148,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img1.JPG")} alt="" />
+                            <img className='h-full w-full object-cover' src={getImage("img1.jpg")} alt="" />
                         </div>
                     </div>
                 </div>
