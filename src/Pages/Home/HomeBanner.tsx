@@ -14,7 +14,7 @@ const HomeBanner = () => {
 
 
     return (
-        <div ref={ref} className="home-landing">
+        <div ref={ref} className="home-landing pt-12">
             {/* <CarouselProvider interval={15000} isPlaying={true} naturalSlideHeight={1080} infinite={true} naturalSlideWidth={1920} totalSlides={4}>
                 <Slider>
                     <Slide index={0}> */}
@@ -28,13 +28,14 @@ const HomeBanner = () => {
                         </div>
                         <div className='relative z-10'>
                             <div className="text-center">
-                                <h1 className="md:text-7xl text-5xl text-white font-extrabold">Eyekontact <span className='text-e_red '> Limited </span></h1>
-                                <h3 className="text-4xl mt-3 text-white font-bold uppercase ">Think Iconic, <span className='text-e_yellow'>Think Eyekontact</span></h3>
+                                <h1 className="md:text-6xl text-5xl text-white font-extrabold drop-shadow-lg">Eyekontact <span className='text-e_red '> Limited </span></h1>
+                                <h3 className="text-6xl font-medium drop-shadow-xl mt-12 text-white ">Think Iconic</h3>
+                                <h3 className="text-6xl drop-shadow-xl mt-6 text-white font-bold">Think Eyekontact</h3>
 
                                 <hr className='w-4/12 block mx-auto my-12 border-t-[2px]' />
 
                                 <div className="mt-4">
-                                    <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                    <button className="px-8 py-3 uppercase font-bold text-white b bg-e_dark rounded-3xl">
                                         overview video
                                     </button>
                                 </div>

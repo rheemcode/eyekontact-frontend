@@ -12,6 +12,7 @@ import PageLoading from '../../Components/Loader';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { getPageAsync } from '../../features/cms/cmsSlice';
 import { getIcon, getImage } from '../../Utils';
+import { Link } from 'react-router-dom';
 
 const OutdoorDisplay = () => {
     return (
@@ -53,23 +54,32 @@ const Home = () => {
                 </div>
                 <div className="py-12 md:w-10/12 mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center">
-                        <div className=''>
+                        <div className='text-center'>
                             <img className='w-24 mx-auto' src={getIcon("billboard.png")} alt="" />
+                            <p className="font-medium">Billboard</p>
                         </div>
-                        <div>
+                        <div className='text-center'>
                             <img className='w-24 mx-auto' src={getIcon("bus-branding.png")} alt="" />
+                            <p className="font-medium">Bus branding</p>
+
                         </div>
-                        <div>
+                        <div className='text-center'>
                             <img className='w-24 mx-auto' src={getIcon("bus-shelter.png")} alt="" />
+                            <p className="font-medium">Bus shelter</p>
+
                         </div>
-                        <div>
+                        <div className='text-center'>
                             <img className='w-24 mx-auto' src={getIcon("digital.png")} alt="" />
+                            <p className="font-medium">Digital</p>
                         </div>
-                        <div>
+                        <div className='text-center'>
                             <img className='w-24 mx-auto' src={getIcon("lamp-pole.png")} alt="" />
+                            <p className="font-medium">Lamp pole</p>
+
                         </div>
-                        <div>
+                        <div className='text-center'>
                             <img className='w-24 mx-auto' src={getIcon("iconic-board.png")} alt="" />
+                            <p className="font-medium">Iconic board</p>
                         </div>
 
                     </div>
@@ -99,30 +109,30 @@ const Home = () => {
                     </div>
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img1.jpg")} alt="" />
+                            <img className='h-full w-full object-fill' src={getImage("img1.JPG")} alt="" />
                         </div>
                     </div>
                 </div>
                 <div className="flex md:flex-row flex-col-reverse">
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img3.jpg")} alt="" />
+                            <img className='h-full w-full object-cover' src={getImage("img3.JPG")} alt="" />
                         </div>
                     </div>
                     <div className='md:w-6/12 px-8 py-4 self-center'>
                         <h2 className="text-3xl font-bold">
-                            ABOUT US?
+                            360 ADVERTISING MARKETING STRATEGY
                         </h2>
                         <div className="my-6 w-32 h-[0.15rem] bg-blue-600"></div>
                         <div className="mt-6">
                             <p className="">
-                                We are an OOH advertising agency , known for iconic creativity and innovations. We create , manage and execute high-impact campaigns for clients who wants to get their ads campaign in front of the right audience .
+                                At Eyekontact we ensure that customers have a positive experience of communication regardless of their locations , we have an overall marketing strategy that focuses on reaching the target audience from multiple platforms and channels. Our type of strategy includes both traditional marketing and digital marketing channels infused within the entire customer journey . We also play into key content like ; Media planning , media buying , Pr activation , creative design and branding .
                             </p>
 
                             <div className="mt-4">
-                                <button className="uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
-                                    About Us
-                                </button>
+                                <Link to={"/about"} className="inline-block uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
+                                    Why Us?
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -140,26 +150,27 @@ const Home = () => {
                             </p>
 
                             <div className="mt-4">
-                                <button className="uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
-                                    Our Platform
-                                </button>
+                                <Link to={"/about"} className="inline-block uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
+                                    About Us
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img1.jpg")} alt="" />
+                            <img className='h-full w-full object-cover' src={getImage("img1.JPG")} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="py-12 bg-blue-600">
                 <div className="text-center md:px-20 ">
-                    <h3 className="text-white md:text-xl">
-                        At Eyekontact we ensure that customers have a positive experience of communication regardless of their locations , we have an overall marketing strategy that focuses on reaching the target audience from multiple platforms and channels. Our type of strategy includes both traditional marketing and digital marketing channels infused within the entire customer journey . We also play into key content like ; Media planning , media buying , Pr activation , creative design and branding .
+                    <h3 className="text-white md:text-3xl">
+                        We believe that Out-of-Home advertising, when done well, is the most powerful, engaging and effective advertising medium.
                     </h3>
                 </div>
             </div>
+
             <div>
                 <div className="grid grid-cols-2 md:grid-cols-4">
                     <div className="h-[200px] bg-slate-400 border-white border-2 flex">
@@ -188,6 +199,58 @@ const Home = () => {
                         <img className='w-full h-full object-fill' src={getImage("04.jpg")} alt="" />
                     </div>
                 </div>
+                <div className="py-12">
+                    <div className="text-center">
+                        <h3 className="text-3xl font-bold uppercase">
+                            Our Clients
+                        </h3>
+                    </div>
+                    <div className="mt-8 mdpx-8 px-4">
+                        <div className="flex justify-center flex-col gap-6">
+                            <div className="grid md:grid-cols-7 grid-cols-3">
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("jameson.jpg")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("mtn.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("guinness.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("cocacola.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("martel.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("friesland.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[100px] md:w-[120px]' src={getImage("jumia.png")} alt="" />
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-5 md:mt">
+
+                                <div>
+                                    <img className='w-[120px]' src={getImage("brewery.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[120px]' src={getImage("kuda.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[120px]' src={getImage("stanbic.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[120px]' src={getImage("vento.png")} alt="" />
+                                </div>
+                                <div>
+                                    <img className='w-[120px]' src={getImage("henry.png")} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div>
                     <div className="py-8 bg-e_red">
                         <div className="text-center md:px-20 ">
@@ -214,13 +277,23 @@ const Home = () => {
                 </h1>
                 <div className="flex justify-center mt-12">
                     <div className='flex gap-12'>
-                        <img className="w-24 md:w-36" src={getImage("award1.jpeg")} alt="" />
-                        <img className="w-24 md:w-36" src={getImage("award2.jpeg")} alt="" />
+                        <div className="text-center">
+                            <img className="w-24 md:w-36 inline" src={getImage("award1.jpeg")} alt="" />
+                            <div className="font-semibold mt-4 text-white uppercase">
+                                Outdoor Company of The Year EYEKONTACT
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <img className="w-24 md:w-36 inline" src={getImage("award2.jpeg")} alt="" />
+                            <div className="font-semibold mt-4 text-white uppercase">
+                                Outdoor Personality of The Year EYEKONTACT
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="py-12">
-                <div className="mx-auto w-6/12">
+                <div className="mx-auto w-11/12 md:w-6/12">
                     <h3 className="text-3xl font-semibold text-center">
                         Want to know more?
                     </h3>
