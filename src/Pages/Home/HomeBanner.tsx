@@ -28,9 +28,9 @@ const HomeBanner = () => {
                         </div>
                         <div className='relative z-10'>
                             <div className="text-center">
-                                <h1 className="md:text-6xl text-5xl text-white font-extrabold drop-shadow-lg">Eyekontact <span className='text-e_red '> Limited </span></h1>
-                                <h3 className="text-6xl font-medium drop-shadow-xl mt-12 text-white ">Think Iconic</h3>
-                                <h3 className="text-6xl drop-shadow-xl mt-6 text-white font-bold">Think Eyekontact</h3>
+                                <h1 className="md:text-6xl text-5xl text-e_dark font-extrabold drop-shadow-lg">Eyekontact <span className='text-e_red '> Limited </span></h1>
+                                <h3 className="text-6xl font-medium drop-shadow-xl mt-12 text-e_dark ">Think Iconic</h3>
+                                <h3 className="text-6xl drop-shadow-xl mt-6 text-e_dark font-bold">Think Eyekontact</h3>
 
                                 <hr className='w-4/12 block mx-auto my-12 border-t-[2px]' />
 
