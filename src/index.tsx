@@ -33,6 +33,8 @@ import DigitalBillboard from './Pages/Products/DigitalBillboard';
 import Drape from './Pages/Products/Walldrape';
 import Branding from './Pages/Products/Branding';
 import Unipole from './Pages/Products/Unipole';
+import IconicPlatorm from './Pages/Products/IconicPlatform';
+import LampPoles from './Pages/Products/LampPoles';
 const persistor = persistStore(store);
 
 ReactDOM.render(
@@ -54,10 +56,13 @@ ReactDOM.render(
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/products" element={<Products />} />
-                <Route path="/products/digital-billboard" element={<DigitalBillboard />} />
-                <Route path="/products/drape" element={<Drape />} />
+                <Route path="/products/billboards" element={<DigitalBillboard />} />
+                <Route path="/products/iconic-structure" element={<IconicPlatorm />} />
                 <Route path="/products/branding" element={<Branding />} />
-                <Route path="/products/unipole" element={<Unipole />} />
+                <Route path="/products/lamp-poles" element={<LampPoles />} />
+                {/* <Route path="/products/drape" element={<Drape />} /> */}
+                {/* <Route path="/products/unipole" element={<Unipole />} /> */}
+
 
                 <Route path="/terms-and-condition" element={<TAC />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />

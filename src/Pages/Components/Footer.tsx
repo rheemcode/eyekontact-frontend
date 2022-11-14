@@ -47,49 +47,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="useful-links-area mb-12">
-                        <div>
-                            <h2 className="font-bold mb-5 text-e_yellow">LAGOS</h2>
-                            <div>
-                                <p>
-                                    Adeola Odeku, Victoria Island
-                                    Adeola Odeku, Victoria Island
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="useful-links-area mb-12">
-                        <div>
-                            <h2 className="font-bold mb-5 text-e_yellow">LAGOS</h2>
-                            <div>
-                                <p>
-                                    Adeola Odeku, Victoria Island
-                                    Adeola Odeku, Victoria Island
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="useful-links-area mb-12">
-                        <div>
-                            <h2 className="font-bold mb-5 text-e_yellow">LAGOS</h2>
-                            <div>
-                                <p>
-                                    Adeola Odeku, Victoria Island
-                                    Adeola Odeku, Victoria Island
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div className="px-6 md:px-20">
                 <div className="py-12 mt-8 border-t text-center">
                     <div className="font-semibold text-sm">
-                        NEW YORK | LOS ANGELES | CHICAGO | PHILADELPHIA | SAN FRANCISCO | WASHINGTON, D.C. | PHOENIX | DENVER | LAS VEGAS
+                        Victoria Island | Lekki | Warri | PHILADELPHIA | SAN FRANCISCO | WASHINGTON, D.C. | PHOENIX | DENVER | LAS VEGAS
                         TORONTO | MONTRÉAL | VANCOUVER | CALGARY | EDMONTON | OTTAWA
                     </div>
                 </div>

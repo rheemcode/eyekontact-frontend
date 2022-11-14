@@ -6,27 +6,12 @@ const Header = () => {
         [
             { url: "home", title: "HOME", subLink: [] },
             {
-                url: "", title: "PLATFORMS", subLink:
+                url: "", title: "OUR PLATFORM", subLink:
                     [
-                        { url: "products/digital-billboard", title: "BILLBOARD" },
-                        { url: "checkout", title: "GANTRIES" },
-                        { url: "products/drape", title: "WALL DRAPES" },
+                        { url: "products/iconic-structure", title: "ICONIC STRUCTURE" },
+                        { url: "products/billboards", title: "BILLBOARDS" },
+                        { url: "products/lamp-poles", title: "LAMP POLES" },
                         { url: "products/branding", title: "BRANDING" },
-                        { url: "products/unipole", title: "UNIPOLE" },
-                        { url: "checkout", title: "ROOFTOPS" },
-                        { url: "checkout", title: "BACKLIT" },
-                        { url: "checkout", title: "PORTRAIT" },
-                        { url: "checkout", title: "WALL PANELS" },
-                        { url: "checkout", title: "EYE CATCHERS" },
-                        { url: "checkout", title: "LAMPPOSTS" },
-                        { url: "checkout", title: "SINGLE FACE" },
-                        { url: "checkout", title: "DOUBLE FACE (Static & Digital)" },
-                        { url: "checkout", title: "BUS BRANDING" },
-                        { url: "checkout", title: "TRANSIT (Static & Digital)" },
-                        { url: "products/branding", title: "BUS SHELTERS" },
-                        { url: "checkout", title: "WALL MURAL" },
-                        { url: "checkout", title: "HOUSE BRANDING" },
-
                     ]
             },
             { url: "services", title: "OUR SERVICES", subLink: [] },

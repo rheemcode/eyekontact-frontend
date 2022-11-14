@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import PageLoading from "../../../Components/Loader"
 import { getImage, getPath } from "../../../Utils";
 
-const Branding = () => {
+const LampPoles = () => {
     const location = useLocation();
 
     return (
@@ -13,7 +13,7 @@ const Branding = () => {
                 <div className="banner-bg" style={{ backgroundImage: `url(${getPath("/branding/branding1.jpg")})` }}>
                     <div className="flex relative">
                         <div className="mx-auto container my-12 text-yellow z-10 text-center">
-                            <h1 className="font-extrabold md:text-7xl text-5xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase">Branding</h1>
+                            <h1 className="font-extrabold md:text-7xl text-5xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase">Billboards</h1>
                             {/* <div className="mt-8 relative inline-block w-10/12">
                                 <input ref={searchInput} onChange={(event) => searchLocation.current = event.target.value} id="autocomplete" type="text" placeholder="Search Products Location" className="p-4 text-lg w-full text-black outline-none rounded" />
 
@@ -27,13 +27,9 @@ const Branding = () => {
                 <div className="md:px-12 px-6 bg-slate-100">
                     <div className="md:pt-24 py-12">
                         <h1 className="text-e_red font-semibold uppercase md:text-4xl text-xl text-center">
-                            BRANDING IS BRINGING LIGHT AND RECOGNITION TO AN ORDINARY MATERIAL TO GIVE IT A UNIQUE AND ICONIC APPEARANCE .
+                            LAMP POLES ARE UNIQUE CHANNEL THAT PUT YOUR BRAND DIRECTLY IN THE FACE OF CUSTOMERS AS THEY GO ABOUT THEIR DAY.  
+
                         </h1>
-                    </div>
-                </div>
-                <div className="py-6  text-center bg-slate-100">
-                    <div className="text-slate-600 text-xl font-semibold">
-                        BUS BRANDING • BUILDING BRANDING  • MALL BRANDING • BUS SHELTER  •  WALL MURAL
                     </div>
                 </div>
 
@@ -41,101 +37,106 @@ const Branding = () => {
                     <div className="flex items-center md:flex-row flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                HOUSE / BUILDING BRANDING
+                                LAMP POST AT ALLEN
+
+
+
                             </h2>
                             <p className="mt-3">
-                                Building/house branding can span from repainting an entire building to adding your brand name using a painting
-                            </p>
-                            <p className="mt-3">
-                                This house branding sites for ooh . The static is only visible for just one brand and can accommodate much content .the material to be used is painting  .
-
-                            </p>
-                            <p className="mt-3">
-                                It is called an iconic because it’s a branded large format ooh brand  and the visibility is for close and far range and its mainly in the market area .
-                            </p>
-                            <p className="mt-3">
-                                This is a very innovative means  of ooh ads .
+                                LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
+                                We have these poles on both digital and static format .
                             </p>
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("building-branding.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                                <img src={getImage("lamppost.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
                             </div>
                         </div>
                     </div>
                     <div className="flex items-center md:flex-row-reverse flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                HOUSE / BUILDING BRANDING
+                                LAMP POST AT Ahmadu bello way 
                             </h2>
                             <p className="mt-3">
-                                Building/house branding can span from repainting an entire building to adding your brand name using a painting
-                            </p>
-                            <p className="mt-3">
-                                This house branding sites for ooh . The static is only visible for just one brand and can accommodate much content .the material to be used is painting  .
+                                LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
+                                We have these poles on both digital and static format . The lamppoles is creative in such that you can have the material in dicut .
 
                             </p>
-                            <p className="mt-3">
-                                It is called an iconic because it’s a branded large format ooh brand  and the visibility is for close and far range and its mainly in the market area .
-                            </p>
-                            <p className="mt-3">
-                                This is a very innovative means  of ooh ads .
-                            </p>
+                            
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("building-branding-2.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                                <img src={getImage("lamppost2.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
                             </div>
                         </div>
                     </div>
                     <div className="flex items-center md:flex-row flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                BUS BRANDING
+                                LAMP POST AT international airport   
+
                             </h2>
                             <p className="mt-3">
-                                Bus branding is a moving versatile outdoor channel, which gives room for a plethora of customers to engage with your brand.
+                                LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
+                                We have these poles on both digital and static format . The lamppoles is creative in such that you can have the material in dicut .
 
                             </p>
 
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("bus-branding.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                                <img src={getImage("lamppost3.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
                             </div>
                         </div>
                     </div>
                     <div className="flex items-center md:flex-row-reverse flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                BUS SHELTER
+                                LAMP POST AT ikeja gra
                             </h2>
                             <p className="mt-3">
-                                Bus shelter branding offers a unique opportunity to brands to convey their message to their customers as they begin or end their day.
-
-
+                                LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
+                                We have these poles on both digital and static format . The lamppoles is creative in such that you can have the material in dicut .
                             </p>
-
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("bus-shelter.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                                <img src={getImage("lamppost4.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
                             </div>
                         </div>
                     </div>
                     <div className="flex items-center md:flex-row flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                MALL BRANDING
+                                LAMP POST AT Ikorodu services lane
                             </h2>
                             <p className="mt-3">
-                                Mall branding and static light boards are great to drive consumers to choosing your product as they shop.
+                                LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
+                                We have these poles on both digital and static format . The lamppoles is creative in such that you can have the material in dicut .
+
                             </p>
 
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("mall-branding.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                                <img src={getImage("lamppost5.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                LAMP POST AT Festac
+                            </h2>
+                            <p className="mt-3">
+                                LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
+                                We have these poles on both digital and static format . The lamppoles is creative in such that you can have the material in dicut .
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("lamppost6.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
                             </div>
                         </div>
                     </div>
@@ -197,4 +198,4 @@ const Branding = () => {
     )
 }
 
-export default Branding;
+export default LampPoles;

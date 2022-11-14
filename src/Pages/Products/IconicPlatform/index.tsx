@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import PageLoading from "../../../Components/Loader"
 import { getImage, getPath } from "../../../Utils";
 
-const Branding = () => {
+const IconicPlatorm = () => {
     const location = useLocation();
 
     return (
@@ -13,7 +13,7 @@ const Branding = () => {
                 <div className="banner-bg" style={{ backgroundImage: `url(${getPath("/branding/branding1.jpg")})` }}>
                     <div className="flex relative">
                         <div className="mx-auto container my-12 text-yellow z-10 text-center">
-                            <h1 className="font-extrabold md:text-7xl text-5xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase">Branding</h1>
+                            <h1 className="font-extrabold md:text-7xl text-5xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase">ICONIC PLATFORM</h1>
                             {/* <div className="mt-8 relative inline-block w-10/12">
                                 <input ref={searchInput} onChange={(event) => searchLocation.current = event.target.value} id="autocomplete" type="text" placeholder="Search Products Location" className="p-4 text-lg w-full text-black outline-none rounded" />
 
@@ -24,34 +24,130 @@ const Branding = () => {
                     </div>
                 </div>
 
-                <div className="md:px-12 px-6 bg-slate-100">
-                    <div className="md:pt-24 py-12">
-                        <h1 className="text-e_red font-semibold uppercase md:text-4xl text-xl text-center">
-                            BRANDING IS BRINGING LIGHT AND RECOGNITION TO AN ORDINARY MATERIAL TO GIVE IT A UNIQUE AND ICONIC APPEARANCE .
-                        </h1>
-                    </div>
-                </div>
-                <div className="py-6  text-center bg-slate-100">
-                    <div className="text-slate-600 text-xl font-semibold">
-                        BUS BRANDING • BUILDING BRANDING  • MALL BRANDING • BUS SHELTER  •  WALL MURAL
-                    </div>
-                </div>
 
                 <div className="py-24">
                     <div className="flex items-center md:flex-row flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                HOUSE / BUILDING BRANDING
+                                MEGA WRAP AROUND ICONIC
                             </h2>
                             <p className="mt-3">
-                                Building/house branding can span from repainting an entire building to adding your brand name using a painting
+                                The <b> ICONIC </b> platform is the <b> modern</b> form of advertising which has to do with the <b> digital </b> and <b> creativity</b>  form of advertising in ooh. This kind of platform are especially made for bigger brands that know the effectiveness on their BRANDS . The most important of the iconic platform is that it must be LIT to show the beauty of the brands and tell a story of the brands . This take creativity of outdoors to another level of thinking outside the box for your client so they can reach their consumer/audience perfection on what their brands is about and what they can derive .
+
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("img1.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                ELIPTICAL DIGITAL
+                            </h2>
+                            <p className="mt-3">
+                                This is the fist and last iconic digital  sites for ooh in African .and we have it in Digital and Static . The static is only visible for just one brand and cant accommodate much content .the material to be used is flex . The digital is a video board that can a accommodate more than 5 brands and many content .
                             </p>
                             <p className="mt-3">
-                                This house branding sites for ooh . The static is only visible for just one brand and can accommodate much content .the material to be used is painting  .
+                                It is called a iconic digital board because it is a round digital board and the visibility is for close and far range from the four locations that surround the roundabout .
+                            </p>
+                            <p className="mt-3">
+                                This is a very innovative means  of ooh ads .
+                            </p>
+
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("eliptical.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center md:flex-row flex-col gap-8">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                ICONIC PYLON
+                            </h2>
+                            <p className="mt-3">
+                                This is a fist and last iconic digital  sites for ooh in African .and we have it In Static . The static is only visible for just one brand and cant accommodate much content
+                            </p>
+                            <p className="mt-3">
+                                It is called a iconic static  board because it is creative and innovative as well lit board and the visibility is for close and far range.
+                            </p>
+                            <p className="mt-3">
+                                This is a very innovative means  of ooh ads .
+                            </p>
+
+
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("iconic-pylon.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                ICONIC ODEKU MEGA DRAPE B
+
+                            </h2>
+                            <p className="mt-3">
+                                The  iconic  board is situated in the prime area of Adeola Odeku  victorial island .
 
                             </p>
                             <p className="mt-3">
-                                It is called an iconic because it’s a branded large format ooh brand  and the visibility is for close and far range and its mainly in the market area .
+                                It is called a iconic static board because it is innovative and creative .the visibility is for close and far range.
+
+                            </p>
+                            <p className="mt-3">
+                                This is a very innovative means  of ooh ads .
+
+                            </p>
+
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("iconic-odeku.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center md:flex-row flex-col gap-8">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                OZUMBA MBADIWE LETTERING
+                            </h2>
+                            <p className="mt-3">
+                                This iconic innovation and top notch creative eyekontact as yet shown uniqueness showcasing our iconic acrylic lettering situated at ozumba mbadiwe , vectorial Island Lagos .Features led lightening pronouncing ;
+                            </p>
+                            <div className="mt-3 px-6">
+                                <ol className="list-item list-decimal">
+                                    <li>Exposure</li>
+                                    <li>Visibility</li>
+                                    <li>Uniqueness</li>
+                                    <li>Huge reach of massive audience daily. This iconic site is strategically situated for brands to reach thousands of people everyday also adding aesthetic pleasure to the environment.</li>
+
+                                </ol>
+                            </div>
+
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("ozumba-mbadiwe.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                OCTOPUS LED
+                            </h2>
+                            <p className="mt-3">
+                                This is the fist and last iconic digital  sites for ooh in African .and we have it in Digital and Static . The static is only visible for just one brand and cant accommodate much content .the material to be used is flex . The digital is a video board that can a accommodate more than 5 brands and many content .
+                            </p>
+                            <p className="mt-3">
+                                It is called a iconic digital board because it is a round digital board and the visibility is for close and far range from the four locations that surround the roundabout .
                             </p>
                             <p className="mt-3">
                                 This is a very innovative means  of ooh ads .
@@ -59,83 +155,7 @@ const Branding = () => {
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("building-branding.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
-                        <div className="md:w-6/12 px-4">
-                            <h2 className="md:text-3xl text-lg md:font-bold">
-                                HOUSE / BUILDING BRANDING
-                            </h2>
-                            <p className="mt-3">
-                                Building/house branding can span from repainting an entire building to adding your brand name using a painting
-                            </p>
-                            <p className="mt-3">
-                                This house branding sites for ooh . The static is only visible for just one brand and can accommodate much content .the material to be used is painting  .
-
-                            </p>
-                            <p className="mt-3">
-                                It is called an iconic because it’s a branded large format ooh brand  and the visibility is for close and far range and its mainly in the market area .
-                            </p>
-                            <p className="mt-3">
-                                This is a very innovative means  of ooh ads .
-                            </p>
-                        </div>
-                        <div className="md:w-6/12">
-                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("building-branding-2.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center md:flex-row flex-col gap-8">
-                        <div className="md:w-6/12 px-4">
-                            <h2 className="md:text-3xl text-lg md:font-bold">
-                                BUS BRANDING
-                            </h2>
-                            <p className="mt-3">
-                                Bus branding is a moving versatile outdoor channel, which gives room for a plethora of customers to engage with your brand.
-
-                            </p>
-
-                        </div>
-                        <div className="md:w-6/12">
-                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("bus-branding.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
-                        <div className="md:w-6/12 px-4">
-                            <h2 className="md:text-3xl text-lg md:font-bold">
-                                BUS SHELTER
-                            </h2>
-                            <p className="mt-3">
-                                Bus shelter branding offers a unique opportunity to brands to convey their message to their customers as they begin or end their day.
-
-
-                            </p>
-
-                        </div>
-                        <div className="md:w-6/12">
-                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("bus-shelter.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center md:flex-row flex-col gap-8">
-                        <div className="md:w-6/12 px-4">
-                            <h2 className="md:text-3xl text-lg md:font-bold">
-                                MALL BRANDING
-                            </h2>
-                            <p className="mt-3">
-                                Mall branding and static light boards are great to drive consumers to choosing your product as they shop.
-                            </p>
-
-                        </div>
-                        <div className="md:w-6/12">
-                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
-                                <img src={getImage("mall-branding.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                                <img src={getImage("octopus-led.jpg")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
                             </div>
                         </div>
                     </div>
@@ -197,4 +217,4 @@ const Branding = () => {
     )
 }
 
-export default Branding;
+export default IconicPlatorm;

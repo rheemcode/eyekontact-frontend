@@ -314,6 +314,10 @@ export const getImage = (name: string) => {
     return process.env.PUBLIC_URL + "/images/" + name;
 }
 
+export const getPath = (name: string) => {
+    return process.env.PUBLIC_URL + name;
+}
+
 
 export const getIcon = (name: string) => {
     return process.env.PUBLIC_URL + "/icons/" + name;
