@@ -18,7 +18,7 @@ const HomeBanner = () => {
             {/* <CarouselProvider interval={15000} isPlaying={true} naturalSlideHeight={1080} infinite={true} naturalSlideWidth={1920} totalSlides={4}>
                 <Slider>
                     <Slide index={0}> */}
-            <Carousel>
+            <Carousel slideCount={4}>
                 <CarouselItem className='active'>
                     <div className="relative flex h-screen items-center justify-center">
                         <div className='absolute h-screen'>
@@ -35,9 +35,9 @@ const HomeBanner = () => {
                                 <hr className='w-4/12 block mx-auto my-12 border-t-[2px]' />
 
                                 <div className="mt-4">
-                                    <button className="px-8 py-3 uppercase font-bold text-white b bg-e_dark rounded-3xl">
+                                    <a href='https://www.instagram.com/reel/CiuuGVmD3xd/?igshid=ZDU1ZDhlY2E' target="_blank" className="inline-block px-8 py-3 uppercase font-bold text-white b bg-e_dark rounded-3xl">
                                         overview video
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -53,9 +53,9 @@ const HomeBanner = () => {
                         </div>
                         <div className='relative z-10'>
                             <div className="text-right mb-20 mr-20">
-                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                <a href='https://www.instagram.com/reel/CiuuGVmD3xd/?igshid=ZDU1ZDhlY2E' target="_blank" className="inline-block px-8 py-3 uppercase font-bold text-white bg-e_dark  rounded-3xl">
                                     overview video
-                                </button>
+                                </a>
                             </div>
 
                         </div>
@@ -70,9 +70,9 @@ const HomeBanner = () => {
                         </div>
                         <div className='relative z-10'>
                             <div className="text-right mb-20 mr-20">
-                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                <a href='https://www.instagram.com/reel/CiuuGVmD3xd/?igshid=ZDU1ZDhlY2E' target="_blank" className="inline-block px-8 py-3 uppercase font-bold text-white bg-e_dark  rounded-3xl">
                                     overview video
-                                </button>
+                                </a>
                             </div>
 
                         </div>
@@ -87,9 +87,9 @@ const HomeBanner = () => {
                         </div>
                         <div className='relative z-10'>
                             <div className="text-right mb-20 mr-20">
-                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                <a href='https://www.instagram.com/reel/CiuuGVmD3xd/?igshid=ZDU1ZDhlY2E' target="_blank" className="inline-block px-8 py-3 uppercase font-bold text-white bg-e_dark  rounded-3xl">
                                     overview video
-                                </button>
+                                </a>
                             </div>
 
                         </div>
@@ -104,9 +104,9 @@ const HomeBanner = () => {
                         </div>
                         <div className='relative z-10'>
                             <div className="text-right mb-20 mr-20">
-                                <button className="px-8 py-3 uppercase font-bold text-white bg-e_red  rounded-3xl">
+                                <a href='https://www.instagram.com/reel/CiuuGVmD3xd/?igshid=ZDU1ZDhlY2E' target="_blank" className="inline-block px-8 py-3 uppercase font-bold text-white bg-e_dark  rounded-3xl">
                                     overview video
-                                </button>
+                                </a>
                             </div>
 
                         </div>

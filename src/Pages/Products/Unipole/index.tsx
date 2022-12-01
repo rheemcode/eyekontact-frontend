@@ -7,7 +7,7 @@ const Unipole = () => {
 
     return (
         <div>
-            <PageLoading />
+
 
             <div className="">
                 <div className="banner-bg" style={{ backgroundImage: `url(${getImage("unipole/unipole1.jpg")})` }}>

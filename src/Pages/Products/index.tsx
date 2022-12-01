@@ -105,7 +105,7 @@ const Products = () => {
 
     return (
         <div className="services">
-            <PageLoading />
+
             <div className="">
                 <div className="banner-bg" style={{ backgroundImage: `url(${servicePageContent.landingBg})` }}>
                     <div className="flex relative">

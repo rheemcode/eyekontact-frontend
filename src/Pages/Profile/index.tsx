@@ -12,7 +12,7 @@ const Profile = () => {
             userState.isLogin ?
 
                 <div className="profile-page" >
-                    <PageLoading />
+
                     <PageBanner title="Profile" path="Profile" />
                     {/* <div className="py-12"></div> */}
                     <div className="lg:px-12 px-6">

@@ -10,14 +10,14 @@ const PrivacyPolicySection = () => {
     const pageContent = useAppSelector((state) => state.pageContent.webPagesState.privacyPolicy)
 
     return (
-        <div className="tac py-12 px-8" dangerouslySetInnerHTML={{ __html: pageContent}} />
+        <div className="tac py-12 px-8" dangerouslySetInnerHTML={{ __html: pageContent }} />
     )
 }
 
 const PrivacyPolicy = () => {
     return (
         <div>
-            <PageLoading />
+
             <PageBanner title="Terms and Condition" path="Terms and Condition" image={""} />
             <PrivacyPolicySection />
         </div >

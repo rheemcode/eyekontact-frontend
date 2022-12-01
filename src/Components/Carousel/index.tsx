@@ -5,6 +5,7 @@ import "./style.css"
 
 declare interface CarouselProps {
     id?: string;
+    slideCount?: number;
 }
 
 
@@ -47,6 +48,11 @@ const Carousel: React.FC<CarouselProps> = (props) => {
 
     return (
         <div ref={carouselRef} id={`carousel-${props.id}`} onMouseEnter={handleHover} onMouseLeave={handleHover} className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-indicators">
+                {
+                    new Array(props.slideCount).fill(0).map((val, index) => <button key={index} type="button" data-bs-target={`#carousel-${props.id}`} data-bs-slide-to={`${index}`} className="active" aria-current="true" aria-label={`Slide ${index + 1}`}></button>)
+                }
+            </div>
             <div className="carousel-inner">
                 <div ref={carouselHolderRef} className="carousel-holder">
                     {props.children}

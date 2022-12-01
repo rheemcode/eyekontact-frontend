@@ -14,7 +14,7 @@ const TACSection = () => {
 const TAC = () => {
     return (
         <div>
-            <PageLoading />
+
             <PageBanner title="Terms and Condition" path="Terms and Condition" image={""} />
             <TACSection />
         </div >

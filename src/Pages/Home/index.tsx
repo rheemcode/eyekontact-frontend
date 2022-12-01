@@ -44,7 +44,7 @@ const Home = () => {
 
     return (
         <div className="home" >
-            <PageLoading />
+
             <HomeBanner />
             <div className="md:py-24 py-12 bg-slate-100">
                 <div className="text-center md:px-20 ">
@@ -55,7 +55,7 @@ const Home = () => {
                 <div className="py-12 md:w-10/12 mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center">
                         <div className='text-center'>
-                            <img className='w-24 mx-auto' src={getIcon("billboard.png")} alt="" />
+                            <img className='w-24 mx-auto hue-rotate-15' src={getIcon("billboard.png")} alt="" />
                             <p className="font-medium">Billboard</p>
                         </div>
                         <div className='text-center'>
@@ -92,7 +92,7 @@ const Home = () => {
                         <h2 className="text-3xl font-bold">
                             WHY US?
                         </h2>
-                        <div className="my-6 w-32 h-[0.15rem] bg-blue-600"></div>
+                        <div className="my-6 w-32 h-[0.15rem] bg-e_blue"></div>
                         <div className="mt-6">
                             <p className="">
                                 We believe in the power of OOH advertising and we will serve you the most cost effective ways to reach your target audience in strategic locations. If you have an idea that needs to be seen , or a product that needs to be sold , we can and will help.
@@ -101,7 +101,7 @@ const Home = () => {
                                 Plan your next campaign with us.
                             </p>
                             <div className="mt-4">
-                                <button className="uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
+                                <button className="uppercase font-bold border rounded-3xl py-2 px-12 border-e_blue text-e_blue">
                                     Our Platform
                                 </button>
                             </div>
@@ -123,14 +123,14 @@ const Home = () => {
                         <h2 className="text-3xl font-bold">
                             360 ADVERTISING MARKETING STRATEGY
                         </h2>
-                        <div className="my-6 w-32 h-[0.15rem] bg-blue-600"></div>
+                        <div className="my-6 w-32 h-[0.15rem] bg-e_blue"></div>
                         <div className="mt-6">
                             <p className="">
                                 At Eyekontact we ensure that customers have a positive experience of communication regardless of their locations , we have an overall marketing strategy that focuses on reaching the target audience from multiple platforms and channels. Our type of strategy includes both traditional marketing and digital marketing channels infused within the entire customer journey . We also play into key content like ; Media planning , media buying , Pr activation , creative design and branding .
                             </p>
 
                             <div className="mt-4">
-                                <Link to={"/about"} className="inline-block uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
+                                <Link to={"/about"} className="inline-block uppercase font-bold border rounded-3xl py-2 px-12 border-e_blue text-e_blue">
                                     Why Us?
                                 </Link>
                             </div>
@@ -143,14 +143,17 @@ const Home = () => {
                         <h2 className="text-3xl font-bold">
                             Our Company
                         </h2>
-                        <div className="my-6 w-32 h-[0.15rem] bg-blue-600"></div>
+                        <div className="my-6 w-32 h-[0.15rem] bg-e_blue"></div>
                         <div className="mt-6">
                             <p className="">
-                                Eyekontact Limited is a top Outdoor Advertising company in Nigeria. Certified by LASAA, OOAN and APCON. We are experts in Out-Of-Home advertising and provide our customers with digital and Static billboards, transit signages , and lamp-poles advert displays. We give our clients strategic brand awareness insights , creative supports , and channels to deliver their brand message effectively.
+                                Eyekontact limited is one of Nigeria’s leading advertising companies which was incorporated in December 2007. We are certified by Lagos State Signage Advertising Agency [LASAA], members of Advertising Practitioner Council of Nigeria [APCON] and Advertising Association of Nigeria [OAAN].
+                                We specialize in out-of-home [OOH] advertising and marketing communication which provides solutions for our customers inform of out media platforms across Nigeria.
+                                We have won several awards in recognition of our innovative ideas and disruptive concepts across the country.
+
                             </p>
 
                             <div className="mt-4">
-                                <Link to={"/about"} className="inline-block uppercase font-bold border rounded-3xl py-2 px-12 border-blue-600 text-blue-600">
+                                <Link to={"/about"} className="inline-block uppercase font-bold border rounded-3xl py-2 px-12 border-e_blue text-e_blue">
                                     About Us
                                 </Link>
                             </div>
@@ -163,40 +166,45 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-12 bg-blue-600">
+            <div className="py-12 bg-e_blue">
                 <div className="text-center md:px-20 ">
                     <h3 className="text-white md:text-3xl">
-                        We believe that Out-of-Home advertising, when done well, is the most powerful, engaging and effective advertising medium.
+                        for over two decades, we have been performing top tier service pan African providing the best outdoor advertising experience
                     </h3>
                 </div>
             </div>
 
             <div>
-                <div className="grid grid-cols-2 md:grid-cols-4">
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("A.jpg")} alt="" />
-                    </div>
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("B.jpg")} alt="" />
-                    </div>
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("C.jpg")} alt="" />
-                    </div>
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("04.jpg")} alt="" />
-                    </div>
+                <div className='py-8 px-12 bg-slate-100'>
+                    <div>
+                        <h1 className="text-4xl text-e_black font-bold text-center">
+                            DISRUPTIVE INNOVATION
+                        </h1>
+                        <div className="mt-4">
+                            <h4 className="text-2xl font-semibold text-center">
+                                The iconic innovation and top notch creativity of Eyekontact as yet again shown uniqueness showcasing our iconic acrylic lettering situated at Ozumba Mbadiwe, Victoria island Lagos.
+                            </h4>
+                            <div className="px-4 mt-6">
+                                <ol className='list-decimal text-xl font-medium space-y-3'>
 
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("01.jpg")} alt="" />
-                    </div>
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("02.jpg")} alt="" />
-                    </div>
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("03.jpg")} alt="" />
-                    </div>
-                    <div className="h-[200px] bg-slate-400 border-white border-2 flex">
-                        <img className='w-full h-full object-fill' src={getImage("04.jpg")} alt="" />
+                                    <div className="font-semibold">
+                                        Features of Led Lightening Pronouncing are:-
+                                    </div>
+                                    <li>
+                                        Exposure
+                                    </li>
+                                    <li>
+                                        Visibility
+                                    </li>
+                                    <li>
+                                        Uniqueness
+                                    </li>
+                                    <li>
+                                        Huge reach of massive audience daily. The iconic site is strategically situated for brands to reach thousands of people everyday also adding aesthetics pleasure to the community.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="py-12">
@@ -273,7 +281,7 @@ const Home = () => {
             </div> */}
             <div className="py-12 bg-slate-700">
                 <h1 className="text-3xl font-bold text-white text-center">
-                    Awards & Achievements
+                    Client Testimonies
                 </h1>
                 <div className="flex justify-center mt-12">
                     <div className='flex gap-12'>
@@ -295,7 +303,7 @@ const Home = () => {
             <div className="py-12">
                 <div className="mx-auto w-11/12 md:w-6/12">
                     <h3 className="text-3xl font-semibold text-center">
-                        Want to know more?
+                        +234 903 1462 108
                     </h3>
                     <div className="my-6 w-4/12 mx-auto h-1 bg-e_red"></div>
                     <p className="mb-6 text-center">

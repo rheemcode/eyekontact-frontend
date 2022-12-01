@@ -76,16 +76,7 @@ ReactDOM.render(
               <Route path='/transaction' element={<Transaction />} />
               <Route path="login" element={<SignIn />} />
               <Route path="register" element={<SignUp />} />
-              <Route path="/dashboard" element={<Dashboard />}>
-                <Route path="overview" element={<DashboardOverview />} />
-                <Route path='orders' element={<DashboardOrders />} />
-                <Route path='users' element={<DashboardUsers />} />
-                <Route path='products' element={<DashboardProducts />} />
-                <Route path='blogs' element={<DashboardBlog />} />
-                <Route path='profile' element={<DashboardProfile />} />
-                <Route path='subscribers' element={<DashboardSubs />} />
-                <Route path='cms' element={<DashboardCMS />} />
-              </Route>
+             
             </Routes>
           </React.StrictMode>
         </BrowserRouter >

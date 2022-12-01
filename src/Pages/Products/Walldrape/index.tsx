@@ -7,7 +7,7 @@ const Drape = () => {
 
     return (
         <div>
-            <PageLoading />
+
 
             <div className="">
                 <div className="banner-bg" style={{ backgroundImage: `url(${getImage("drape/drape1.jpg")})` }}>

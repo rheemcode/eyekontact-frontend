@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import PageLoading from "../../Components/Loader";
 import PageBanner from "../../Components/PageBanner";
 import { useAppSelector } from "../../hooks";
-import { APPURL } from "../../Utils";
+import { APPURL, getImage } from "../../Utils";
 import Footer from "../Components/Footer";
 import ServicesSection from "../Components/Services/ServiceSection";
 import ClientTestimonial from "../Components/Testimonial";
@@ -58,93 +58,176 @@ const WorkWithUsSection = () => {
 }
 
 const Services = () => {
-    const homePageContent = useAppSelector((state) => state.pageContent.webPagesState.homeState);
-    const servicePageContent = useAppSelector((state) => state.pageContent.webPagesState.servicesState);
-    const searchLocation = useRef("");
-    const searchInput = useRef(HTMLInputElement.prototype);
-    const location = useLocation();
-
-    const navigate = useNavigate();
-
-    const handleSearch = () => {
-        navigate(`/products?product-location=${searchInput.current.value}`, { replace: true });
-    }
-
-
-    useEffect(() => {
-        const loader = document.createElement("script");
-        loader.innerHTML = `
-
-        function initAutocomplete() {
-          setTimeout(() => {
-            autocomplete = new google.maps.places.Autocomplete(
-              document.getElementById("autocomplete"), {
-                types: ["address"],
-                componentRestrictions: {
-                  'country': ["NG"]
-                },
-                fields: ["place_id", "geometry", "name"]
-              });
-          }, [3000])
-    
-    
-        }
-        initAutocomplete();
-        
-        `;
-
-        document.body.appendChild(loader);
-
-        return () => {
-            document.body.removeChild(loader);
-        }
-
-        // }
-    }, [])
-
-
     return (
         <div className="services">
-            <PageLoading />
-            <div className="">
-                <div className="banner-bg" style={{ backgroundImage: `url(${servicePageContent.landingBg})` }}>
-                    <div className="flex relative">
-                        <div className="mx-auto container my-12 text-yellow z-10 text-center">
-                            <h1 className="font-extrabold text-4xl mb-4">{"Services"}</h1>
-                            <h1 className="select-none">Home &nbsp; <span className="font-extrabold capitalize">{' > '} &nbsp;</span>  {location.pathname.split("/").join(" ")}</h1>
-                            <div className="mt-8 relative inline-block w-10/12">
-                                <input ref={searchInput} onChange={(event) => searchLocation.current = event.target.value} id="autocomplete" type="text" placeholder="Search Products Location" className="p-4 text-lg w-full text-black outline-none rounded" />
-
-                                <SearchIcon onClick={handleSearch} className="inline right-5 absolute h-full cursor-pointer" width={30} />
+            <div className="pt-12">
+                <div className="bg bg-cover pb-48 pt-24 h-screen relative" style={{ backgroundImage: `url(${getImage("background.jpg")})` }}>
+                    <div className="flex flex-col relative">
+                        <div className="text-right">
+                            <img className="inline md:w-64 w-32" src={getImage("eyekontact-logo.png")} alt="" />
+                        </div>
+                        <div className="mx-auto container mt-36 text-yellow z-10 text-center">
+                            <h1 className="font-extrabold md:text-7xl text-3xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">OUR SERVICES</h1>
+                        </div>
+                    </div>
+                    <div className="absolute bottom-0 p-2  md:p-4">
+                        <h1 className="font-extrabold md:text-lg  mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">OUTDOOR ADVERTISING SOLUTIONS</h1>
+                    </div>
+                </div>
+                <div className="bg bg-cover md:pb-48 md:pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex flex-col relative">
+                        <div className="mx-auto container md:mt-36 text-yellow z-10 text-center">
+                            <div className="text-center">
+                                <img src={getImage("360image.png")} alt="" className="inline" />
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
-            <ServicesSection maxService={100} />
-
-            <div className="mt-12 mb-12 lg:mb-36 lg:mt-24 lg:px-24 px-6">
-                <div className="grid  gap-8 md:grid-flow-col grid-flow-row">
-                    <div>
-                        <video className="rounded shadow" id="player2" playsInline controls data-poster={`https://eyekontact.com.ng/uploads/images/lekki.jpg`}>
-                            <source src={`https://eyekontact.com.ng/uploads/videos/lekki.mp4`} type="video/mp4" />
-                        </video>
-                    </div>
-                    <div className="self-center">
-                        <h1 className="border-b-4 inline-block pb-4 border-red text-3xl lg:text-6xl font-bold">
-                            Iconic Bespoke Displays                        </h1>
-                        <p className="mt-6 md:text-xl text-lg !leading-8">
-                            Looking to create an outdoor display that is truly iconic and custom made to your brand?
-                            Then reach out to us and we can help you achieve the virality that you seek.
-                        </p>
-                        <Link to="contact" className="py-3 px-6 bg-e_red mt-5 inline-block font-bold text-white">CONTACT US</Link>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex flex-col relative">
+                        <div className="mx-auto container mt-36 text-yellow z-10 text-center">
+                            <h1 className="font-extrabold md:text-3xl text-lg mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase ">
+                                We can create custom display that convey your brand messages and also help your company display
+                            </h1>
+                        </div>
                     </div>
                 </div>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                ICONIC STRUCTURE
+                            </h2>
+                            <p className="mt-3">
+                                The iconic platforms is the modern form of advertising which has to do with the digital and creative forms of advertising in OOH. This kind of platform are especially made for bigger brands that know the effectiveness on their
+                                BRANDS . The most important of the iconic platform is that it must be LIT to show the beauty of the brands and tell a story of the brands. This takes creativity of outdoors to another level of thinking outside the box for your clients so they can reach their consumer audience perfection what their brands is about and what they can derive.
+
+
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("ozumba-mbadiwe.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                MEDIA PLANNING MP
+
+                            </h2>
+                            <p className="mt-3">
+                                At Eyekontact our approach to media planning is to understand our client brands’ marketing, adevertising and media goals. We incorporate the four core steps in media planning; market analysis, establishment of media objectives, media strategy development and implementation and evaluation and follow up.
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("media.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                BRANDING BR
+
+                            </h2>
+                            <p className="mt-3">
+                                Our strategy towards branding is developing brand recognition, customers loyalty and builds lasting relationships with our amiable clients.
+
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("branding-text.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                MEDIA BUYING MB
+                            </h2>
+                            <p className="mt-3">
+                                We put media planning into action, focusing on buying the right mix of media to deliver on the campaign goals effectively.
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("media-buying.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                DIGITAL MARKETING DM
+                            </h2>
+                            <p className="mt-3">
+                                We put media planning into action, focusing on buying the right mix of media to deliver on the campaign goals effectively.
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("digital-marketing.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                CREATIVE DESIGN CD
+                            </h2>
+                            <p className="mt-3">
+                                Eyekontact creative design produces iconic, unique and memorable design that stand out to our customers for easy identification of their brand and products.
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("creative-design.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                    <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
+                        <div className="md:w-6/12 px-4">
+                            <h2 className="md:text-3xl text-lg md:font-bold">
+                                PR ACTIVATION PRA
+                            </h2>
+                            <p className="mt-3">
+                                We do PR activation through campaigns, events and interact which your brand generates awareness and builds lasting connections with target audience.
+
+                            </p>
+                        </div>
+                        <div className="md:w-6/12">
+                            <div className="w-full h-full max-h-[450px] overflow-y-hidden">
+                                <img src={getImage("pr-activation.png")} alt="" className="shadow-lg rounded-lg w-full h-full object-fill" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
-            <ClientTestimonial {...homePageContent.testimonialSection} />
-            <WorkWithUsSection />
-        </div>
+
+
+        </div >
     );
 
 }

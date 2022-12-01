@@ -7,31 +7,48 @@ const LampPoles = () => {
 
     return (
         <div>
-            <PageLoading />
+
 
             <div className="">
-                <div className="banner-bg" style={{ backgroundImage: `url(${getPath("/branding/branding1.jpg")})` }}>
-                    <div className="flex relative">
-                        <div className="mx-auto container my-12 text-yellow z-10 text-center">
-                            <h1 className="font-extrabold md:text-7xl text-5xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase">Billboards</h1>
-                            {/* <div className="mt-8 relative inline-block w-10/12">
-                                <input ref={searchInput} onChange={(event) => searchLocation.current = event.target.value} id="autocomplete" type="text" placeholder="Search Products Location" className="p-4 text-lg w-full text-black outline-none rounded" />
 
-                                <SearchIcon onClick={handleSearch} className="inline right-5 absolute h-full cursor-pointer" width={30} />
-                            </div> */}
+                <div className="bg bg-cover pb-48 pt-24 h-screen relative" style={{ backgroundImage: `url(${getImage("background.jpg")})` }}>
+                    <div className="flex flex-col relative">
+                        <div className="text-right">
+                            <img className="inline md:w-64 w-32" src={getImage("eyekontact-logo.png")} alt="" />
                         </div>
+                        <div className="mx-auto container mt-36 text-yellow z-10 text-center">
+                            <h1 className="font-extrabold md:text-7xl text-3xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">LAMP POLES</h1>
+                        </div>
+                    </div>
 
+                </div>
+
+                <div className="bg bg-cover pb-48 pt-24 h-screen relative" style={{ backgroundImage: `url(${getImage("background.jpg")})` }}>
+                    <div className="flex flex-col relative">
+                        <div className="text-right">
+                            <img className="inline md:w-64 w-32" src={getImage("eyekontact-logo.png")} alt="" />
+                        </div>
+                        <div className="mx-auto container mt-36 text-yellow z-10 text-center">
+                            <h1 className="font-extrabold md:text-3xl text-lg mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">
+
+                                LAMP POLES ARE UNIQUE CHANNEL THAT PUT YOUR BRAND DIRECTLY IN THE FACE OF CUSTOMERS AS THEY GO ABOUT THEIR DAY.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div className="md:py-24 py-12 bg-slate-100">
+                    <div className="text-center md:px-20 ">
+                        <h3 className="text-zinc-600 md:text-3xl text-xl">
+                            Lagos |     Abuja  |     Portharcourt |   Ilorin     |       Ibadan    |      Owerri            | Kano
+
+                            |Kaduna   Onitsha         Aba           | Asaba           | Warri          | Benin city   |     Oshogbo
+                            |   Ekiti     |    Sokoto   |      Zaria      |     Enugu            | Akure       |  Abeokuta   |        Jos
+                            |  Uyo      |    Umuahia  |     Calabar      | Kastina.
+
+                        </h3>
                     </div>
                 </div>
 
-                <div className="md:px-12 px-6 bg-slate-100">
-                    <div className="md:pt-24 py-12">
-                        <h1 className="text-e_red font-semibold uppercase md:text-4xl text-xl text-center">
-                            LAMP POLES ARE UNIQUE CHANNEL THAT PUT YOUR BRAND DIRECTLY IN THE FACE OF CUSTOMERS AS THEY GO ABOUT THEIR DAY.  
-
-                        </h1>
-                    </div>
-                </div>
 
                 <div className="py-24">
                     <div className="flex items-center md:flex-row flex-col gap-8">
@@ -56,14 +73,14 @@ const LampPoles = () => {
                     <div className="flex items-center md:flex-row-reverse flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                LAMP POST AT Ahmadu bello way 
+                                LAMP POST AT Ahmadu bello way
                             </h2>
                             <p className="mt-3">
                                 LAMPPOLES ARE THE STREET POLES THAT EASILY CATCHES YOUR TARGET AUDIENCE ON THE CLEAR CONTENT OF YOUR BRAND .
                                 We have these poles on both digital and static format . The lamppoles is creative in such that you can have the material in dicut .
 
                             </p>
-                            
+
                         </div>
                         <div className="md:w-6/12">
                             <div className="w-full h-full max-h-[450px] overflow-y-hidden">
@@ -74,7 +91,7 @@ const LampPoles = () => {
                     <div className="flex items-center md:flex-row flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
-                                LAMP POST AT international airport   
+                                LAMP POST AT international airport
 
                             </h2>
                             <p className="mt-3">

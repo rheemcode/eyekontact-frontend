@@ -19,15 +19,15 @@ declare interface ProgressBarProps {
 export const ProgressBar: React.FC<ProgressBarProps> = (props) => {
     return (
         <div className="progress w-full bg-white" style={{ height: "6px" }}>
-            <div className="proress-bar bg-e_red h-full" style={{ transition: "width 0.3s ease-out", width: `${props.percentage}%`, backgroundColor: props.color }}></div>
+            <div className="proress-bar bg-e_blue h-full" style={{ transition: "width 0.3s ease-out", width: `${props.percentage}%`, backgroundColor: props.color }}></div>
         </div>
     )
 }
 
 const ExpertSection: React.FC<ExpertSectionState> = (props) => {
 
-    const [designMax, strategyMax, planningMax] = [73, 97, 85];
-    const [percentages, setPercentages] = useState({ design: 0, strategy: 0, planning: 0 });
+    const [designMax, strategyMax, planningMax] = [100, 100, 100];
+    const [percentages, setPercentages] = useState({ design: 99, strategy: 99, planning: 99 });
     const ref = useRef(HTMLDivElement.prototype);
     let start = 0;
     let frame = 0;
@@ -90,15 +90,18 @@ const ExpertSection: React.FC<ExpertSectionState> = (props) => {
 
                                 id="expertHeading"
                                 className="shadow text-white text-right text-3xl lg:text-6xl font-extrabold pr-2 border-r-4"
-                                dangerouslySetInnerHTML={{ __html: props.heading }}
-                            />
+                            >
+                                WE ARE EXPERTS IN OUT OF HOME
+                            </h1>
 
                             <h1
 
                                 id="expertHeading2"
-                                className="text-e_red  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
-                                dangerouslySetInnerHTML={{ __html: props.heading2 }}
-                            />
+                                className="text-e_blue  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
+
+                            >
+                                ADVERTISING
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -110,16 +113,18 @@ const ExpertSection: React.FC<ExpertSectionState> = (props) => {
 
                                 id="expertDescription"
                                 className="text-2xl text-white font-medium pr-12"
-                                dangerouslySetInnerHTML={{ __html: props.description }}
-                            />
+                            >
+                                Providing expert assistance with outdoor advertising for over two decades. We can assist your brand with:
+                            </h2>
                         </div>
 
                         <div ref={ref} className="grid grid-row-3 text-white">
                             <div className="col-12 flex flex-col justify-between">
                                 <div className="flex justify-between">
                                     <span id="design" className="font-medium"
-                                        dangerouslySetInnerHTML={{ __html: props.design }}
-                                    />
+                                    >
+                                        Design
+                                    </span>
                                     <span className="font-medium">
                                         {percentages.design}%
                                     </span>

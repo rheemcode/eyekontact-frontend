@@ -40,9 +40,7 @@ const Footer = () => {
                             <h2 className="font-bold mb-5 text-e_yellow">LAGOS</h2>
                             <div>
                                 <p>
-                                    Adeola Odeku, Victoria Island
-                                    Adeola Odeku, Victoria Island
-
+                                    49a Adeniyi Jones Avenue, Ikeja Lagos, Nigeria
                                 </p>
                             </div>
                         </div>
@@ -52,8 +50,7 @@ const Footer = () => {
             <div className="px-6 md:px-20">
                 <div className="py-12 mt-8 border-t text-center">
                     <div className="font-semibold text-sm">
-                        Victoria Island | Lekki | Warri | PHILADELPHIA | SAN FRANCISCO | WASHINGTON, D.C. | PHOENIX | DENVER | LAS VEGAS
-                        TORONTO | MONTRÉAL | VANCOUVER | CALGARY | EDMONTON | OTTAWA
+                        Lagos| Kaduna| Port Harcort |Kano| Benin |Ibadan| Ghana| Oyo| Imo| Anambra |Enugu |Aba
                     </div>
                 </div>
             </div>
