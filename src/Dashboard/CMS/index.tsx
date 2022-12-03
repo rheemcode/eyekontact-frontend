@@ -318,7 +318,7 @@ const ExpertSection = React.forwardRef<HTMLDivElement, ExpertSectionProps>((prop
                             <h1
                                 contentEditable
                                 id="expertHeading2"
-                                className="text-e_red  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
+                                className="text-e_blue  text-right text-3xl lg:text-6xl font-extrabold pr-2 border-white border-r-4"
                                 dangerouslySetInnerHTML={{ __html: props.heading2 }}
                             />
                         </div>
@@ -489,7 +489,7 @@ const BlogInsightSection = React.forwardRef<HTMLDivElement, BlogInsightsSectionP
                 <h3
                     contentEditable
                     id="insightsHeading"
-                    className="text-e_red font-medium uppercase"
+                    className="text-e_blue font-medium uppercase"
                     dangerouslySetInnerHTML={{ __html: props.heading }}
                 />
 
@@ -543,7 +543,7 @@ const WhoWeAreSection = React.forwardRef<HTMLDivElement, WhoWeAreSectionProps>((
                         <h1
                             contentEditable
                             id="whoWeAreAttention"
-                            className="text-e_red lg:text-4xl mr-4 md:text-3xl sm:text-4xl text-3xl py-6 font-extrabold mb-4"
+                            className="text-e_blue lg:text-4xl mr-4 md:text-3xl sm:text-4xl text-3xl py-6 font-extrabold mb-4"
                             dangerouslySetInnerHTML={{ __html: props.attention }}
                         />
 
@@ -569,7 +569,7 @@ const WhoWeAreSection = React.forwardRef<HTMLDivElement, WhoWeAreSectionProps>((
                                 />
                             </div>
                             <div>
-                                <span ref={null} className="text-4xl lg:text-3xl text-e_red font-bold">{100}M</span>
+                                <span ref={null} className="text-4xl lg:text-3xl text-e_blue font-bold">{100}M</span>
                                 <p contentEditable id="monthlyReach" className="text-sm"
                                     dangerouslySetInnerHTML={{ __html: props.monthlyReach }}
                                 />
@@ -1082,7 +1082,7 @@ const About = () => {
                             <h1
                                 contentEditable
                                 id="aboutHeading"
-                                className="text-e_red font-bold text-3xl mb-6"
+                                className="text-e_blue font-bold text-3xl mb-6"
                                 dangerouslySetInnerHTML={{ __html: pageContent.whoWeAreSection.heading }}
                             />
                             <p contentEditable id="aboutDescription" className="text-gray mb-4"

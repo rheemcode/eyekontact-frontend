@@ -167,20 +167,20 @@ const Profile = () => {
                         {userState.isLogin &&
                             <>
                                 <div className='py-1'>
-                                    <h3 className='text-xs font-bold text-e_red uppercase'>
+                                    <h3 className='text-xs font-bold text-e_blue uppercase'>
                                         {userState.userData.firstname?.toUpperCase() + " " + userState.userData.lastname?.toUpperCase()}
                                     </h3>
                                 </div>
                                 <div className='py-1'>
                                     {userState.userData.role?.toLowerCase() != "user" ?
                                         <Link to="/dashboard/profile">
-                                            <h3 className='text-xs font-bold hover:text-e_red uppercase'>
+                                            <h3 className='text-xs font-bold hover:text-e_blue uppercase'>
                                                 Dashboard
                                             </h3>
                                         </Link>
                                         :
                                         <Link to="/profile">
-                                            <h3 className='text-xs font-bold hover:text-e_red uppercase'>
+                                            <h3 className='text-xs font-bold hover:text-e_blue uppercase'>
                                                 Profile
                                             </h3>
                                         </Link>

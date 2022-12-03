@@ -100,7 +100,7 @@ const WhoWeAreSection: React.FC<WhoWeAreSectionState> = (props) => {
                             dangerouslySetInnerHTML={{ __html: props.description }} />
                         <div className="flex gap-12 lg:flex-row md:flex-row sm:flex-col flex-col justify-between">
                             <div>
-                                <span ref={adsPlacedRef} className="text-4xl lg:text-3xl text-e_red font-bold">{count.adsPlaced}K</span>
+                                <span ref={adsPlacedRef} className="text-4xl lg:text-3xl text-e_blue font-bold">{count.adsPlaced}K</span>
                                 <p
                                     id="adsPlaced"
 
@@ -109,13 +109,13 @@ const WhoWeAreSection: React.FC<WhoWeAreSectionState> = (props) => {
                                 />
                             </div>
                             <div>
-                                <span ref={monthlyReachRef} className="text-4xl lg:text-3xl text-e_red font-bold">{count.monthlyReach}M</span>
+                                <span ref={monthlyReachRef} className="text-4xl lg:text-3xl text-e_blue font-bold">{count.monthlyReach}M</span>
                                 <p id="monthlyReach" className="text-sm"
                                     dangerouslySetInnerHTML={{ __html: props.monthlyReach }}
                                 />
                             </div>
                             <div>
-                                <span ref={citiesCoveredRef} className="text-4xl lg:text-3xl text-e_red font-bold">{count.citiesCovered}+</span>
+                                <span ref={citiesCoveredRef} className="text-4xl lg:text-3xl text-e_blue font-bold">{count.citiesCovered}+</span>
                                 <p id="citiesCovered" className="text-sm"
                                     dangerouslySetInnerHTML={{ __html: props.citiesCovered }} />
                             </div>

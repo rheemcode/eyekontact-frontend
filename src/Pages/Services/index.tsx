@@ -74,7 +74,7 @@ const Services = () => {
                         <h1 className="font-extrabold md:text-lg  mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">OUTDOOR ADVERTISING SOLUTIONS</h1>
                     </div>
                 </div>
-                <div className="bg bg-cover md:pb-48 md:pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                <div className="bg bg-cover md:pb-48 md:pt-24  relative before:bg-[#000] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
                     <div className="flex flex-col relative">
                         <div className="mx-auto container md:mt-36 text-yellow z-10 text-center">
                             <div className="text-center">
@@ -83,7 +83,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#000] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
                     <div className="flex flex-col relative">
                         <div className="mx-auto container mt-36 text-yellow z-10 text-center">
                             <h1 className="font-extrabold md:text-3xl text-lg mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase ">
@@ -92,7 +92,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#000] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
                     <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
@@ -113,7 +113,7 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#000] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
                     <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
@@ -131,7 +131,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#00EAF6] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
+                <div className="bg bg-cover pb-48 pt-24  relative before:bg-[#000] before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:opacity-60" style={{ backgroundImage: `url(${getImage("background2.jpg")})` }}>
                     <div className="flex items-center md:flex-row-reverse flex-col gap-8 relative z-10">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">

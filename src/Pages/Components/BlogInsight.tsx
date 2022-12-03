@@ -26,7 +26,7 @@ const BlogGridSection: React.FC<BlogInsightsSectionState> = (props) => {
                 <h3
 
                     id="insightsHeading"
-                    className="text-e_red font-medium uppercase"
+                    className="text-e_blue font-medium uppercase"
                     dangerouslySetInnerHTML={{ __html: props.heading }}
                 />
 

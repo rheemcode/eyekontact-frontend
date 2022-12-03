@@ -25,7 +25,7 @@ const ServiceCard: React.FC<ServicesCardProps> = (props) => {
                     <div className="service-content h h-2/5 absolute bottom-0 w-9/12 text-left right-0 bg-white shadow-lg p-5 pb-8">
                         <div>
                             <img src={props.icon} className='service-icon' alt="" />
-                            <h2 className="font-bold text-e_red mt-4">{props.title}</h2>
+                            <h2 className="font-bold text-e_blue mt-4">{props.title}</h2>
                             {/* <p className=' text-gray text-lg mt-6'>{props.description}</p> */}
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const ServicesSection: React.FC<ServiceSectionProps> = (props) => {
     return (
         <div className="service-section py-12 px-6 lg:px-24 mt-12 text-center">
             <div>
-                <h3 className="text-e_red font-medium">WHAT WE DO</h3>
+                <h3 className="text-e_blue font-medium">WHAT WE DO</h3>
                 <h1 className="text-6xl font-extrabold">
                     OUR SERVICES <span className='text-red'>.</span>
                 </h1>

@@ -68,7 +68,7 @@ const ContactForm = () => {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <button disabled={submitting} type="submit" className="bg-e_red px-10 py-2 text-white font-bold">Submit</button>
+                        <button disabled={submitting} type="submit" className="bg-e_blue px-10 py-2 text-white font-bold">Submit</button>
                     </div>
                 </div>
             </form>

@@ -22,7 +22,7 @@ const WhoWeAreSection: React.FC<AboutUsState> = (props) => {
                         <h1
 
                             id="aboutHeading"
-                            className="text-e_red font-bold text-3xl mb-6"
+                            className="text-e_blue font-bold text-3xl mb-6"
                             dangerouslySetInnerHTML={{ __html: props.heading }}
                         />
                         <p id="aboutDescription" className="text-gray mb-4"
@@ -37,7 +37,7 @@ const WhoWeAreSection: React.FC<AboutUsState> = (props) => {
                             dangerouslySetInnerHTML={{ __html: props.description3 }}
                         />
 
-                        <a href="#" className="py-2 px-6 bg-e_red mt-5 inline-block font-bold text-white">GET IN TOUCH</a>
+                        <a href="#" className="py-2 px-6 bg-e_blue mt-5 inline-block font-bold text-white">GET IN TOUCH</a>
                     </div>
                     <div className="flex mt-12 flex-col lg:flex-row">
                         <div className="mission pr-4">

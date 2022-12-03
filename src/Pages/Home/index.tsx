@@ -116,7 +116,7 @@ const Home = () => {
                 <div className="flex md:flex-row flex-col-reverse">
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img3.jpg")} alt="" />
+                            <img className='h-full w-full object-contain' src={getImage("Picture6.png")} alt="" />
                         </div>
                     </div>
                     <div className='md:w-6/12 px-8 py-4 self-center'>
@@ -161,7 +161,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-6/12'>
                         <div className='h-[500px]'>
-                            <img className='h-full w-full object-cover' src={getImage("img1.jpg")} alt="" />
+                            <img className='h-full w-full object-cover' src={getImage("Picture7.jpg")} alt="" />
                         </div>
                     </div>
                 </div>
@@ -260,7 +260,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="py-8 bg-e_red">
+                    <div className="py-8 bg-e_blue">
                         <div className="text-center md:px-20 ">
                             <h1 className="text-white text-3xl font-bold">
                                 Explore our Nigerian network with our Mapping Tool.
@@ -271,14 +271,36 @@ const Home = () => {
                             </h3>
                         </div>
                     </div>
+                    <div className="grid md:grid-cols-4 grid-cols-2">
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("GANTRYALLEN.jpg")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("BRIDGE PANEL.png")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("ROOFTOP-ALABA.png")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("UNIPOLE-BADAGARY.jpg")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("POTRAIT BACKLIT-MOBOLAJI.png")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("WALL DRAPE-OPEBI.png")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("BUS SHELTER-MOBOLAJI.jpg")} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[200px] w-full' src={getImage("STATIC LAMPPOLES-ISAAC.jpg")} alt="" />
+                        </div>
+                    </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.724506287891!2d3.3426588478755295!3d6.609634025927371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b922cab41d259%3A0xdf22ddcd7d2d5032!2s49%20Adeniyi%20Jones%2C%20Ikeja%20101233%2C%20Ikeja!5e0!3m2!1sen!2sng!4v1642367344563!5m2!1sen!2sng" width="100%" height="450" style={{ border: 0 }} allowFullScreen={false} loading="lazy"></iframe>
                 </div>
             </div>
-            {/* <div className="py-8 bg-slate-100">
-                <h2 className="text-3xl text-center font-medium">
-
-                </h2>
-            </div> */}
+            
             <div className="py-12 bg-slate-700">
                 <h1 className="text-3xl font-bold text-white text-center">
                     Client Testimonies
@@ -305,7 +327,7 @@ const Home = () => {
                     <h3 className="text-3xl font-semibold text-center">
                         +234 903 1462 108
                     </h3>
-                    <div className="my-6 w-4/12 mx-auto h-1 bg-e_red"></div>
+                    <div className="my-6 w-4/12 mx-auto h-1 bg-e_blue"></div>
                     <p className="mb-6 text-center">
                         Getting a response is easy - you can call us at +234 802 381 7414 or simply fill out the form below and we'll get back to you as soon as possible.
                     </p>
@@ -316,7 +338,7 @@ const Home = () => {
                         <input type="text" placeholder='Email' className="text-sm w-full px-3 py-2 border border-slate-300 rounded" />
                         <textarea placeholder='Subject' rows={10} className="text-sm w-full px-3 py-2 border border-slate-300 rounded"></textarea>
                         <div className="py-2 text-center">
-                            <button className="bg-e_red py-2 px-8 rounded-2xl text-white font-semibold">
+                            <button className="bg-e_blue py-2 px-8 rounded-2xl text-white font-semibold">
                                 Send Request
                             </button>
                         </div>
