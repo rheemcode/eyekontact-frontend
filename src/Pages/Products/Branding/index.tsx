@@ -16,26 +16,26 @@ const Branding = () => {
                             <img className="inline md:w-64 w-32" src={getImage("eyekontact-logo.png")} alt="" />
                         </div>
                         <div className="mx-auto container mt-36 text-yellow z-10 text-center">
-                            <h1 className="font-extrabold md:text-7xl text-3xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">LAMP POLES</h1>
+                            <h1 className="font-extrabold md:text-7xl text-3xl mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">Branding</h1>
+                        </div>
+                        <div className="mx-auto container mt-36 text-yellow z-10 text-center">
+                            <h1 className="font-extrabold md:text-3xl text-lg mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">
+                                Branding is bringing light and recognition to an ordinary material to give it a unique and iconic Apparance.
+                            </h1>
                         </div>
                     </div>
 
                 </div>
 
-                <div className="bg bg-cover pb-48 pt-24 h-screen relative" style={{ backgroundImage: `url(${getImage("background.jpg")})` }}>
+                {/* <div className="bg bg-cover pb-48 pt-24 h-screen relative" style={{ backgroundImage: `url(${getImage("background.jpg")})` }}>
                     <div className="flex flex-col relative">
                         <div className="text-right">
                             <img className="inline md:w-64 w-32" src={getImage("eyekontact-logo.png")} alt="" />
                         </div>
-                        <div className="mx-auto container mt-36 text-yellow z-10 text-center">
-                            <h1 className="font-extrabold md:text-3xl text-lg mb-4 drop-shadow-[0_0_1px_rgba(0,0,0,1)] uppercase text-white">
-
-                                LAMP POLES ARE UNIQUE CHANNEL THAT PUT YOUR BRAND DIRECTLY IN THE FACE OF CUSTOMERS AS THEY GO ABOUT THEIR DAY.
-                            </h1>
-                        </div>
+                        
                     </div>
-                </div>
-                <div className="md:py-24 py-12 bg-slate-100">
+                </div> */}
+                {/* <div className="md:py-24 py-12 bg-slate-100">
                     <div className="text-center md:px-20 ">
                         <h3 className="text-zinc-600 md:text-3xl text-xl">
                             Lagos |     Abuja  |     Portharcourt |   Ilorin     |       Ibadan    |      Owerri            | Kano
@@ -46,7 +46,7 @@ const Branding = () => {
 
                         </h3>
                     </div>
-                </div>
+                </div> */}
                 <div className="py-6  text-center bg-slate-100">
                     <div className="text-slate-600 text-xl font-semibold">
                         BUS BRANDING • BUILDING BRANDING  • MALL BRANDING • BUS SHELTER  •  WALL MURAL
@@ -104,7 +104,7 @@ const Branding = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center md:flex-row flex-col gap-8">
+                    <div id="bus-branding" className="flex items-center md:flex-row flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
                                 BUS BRANDING
@@ -121,7 +121,7 @@ const Branding = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center md:flex-row-reverse flex-col gap-8">
+                    <div id="bus-shelter" className="flex items-center md:flex-row-reverse flex-col gap-8">
                         <div className="md:w-6/12 px-4">
                             <h2 className="md:text-3xl text-lg md:font-bold">
                                 BUS SHELTER

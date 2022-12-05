@@ -54,33 +54,32 @@ const Home = () => {
                 </div>
                 <div className="py-12 md:w-10/12 mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center">
-                        <div className='text-center'>
+                        <Link to={"products/billboards"} className='block text-center'>
                             <img className='w-24 mx-auto hue-rotate-15' src={getIcon("billboard.png")} alt="" />
                             <p className="font-medium">Billboard</p>
-                        </div>
-                        <div className='text-center'>
+                        </Link>
+                        <Link to={"products/branding#bus-branding"} className='block text-center'>
                             <img className='w-24 mx-auto' src={getIcon("bus-branding.png")} alt="" />
                             <p className="font-medium">Bus branding</p>
 
-                        </div>
-                        <div className='text-center'>
+                        </Link>
+                        <Link to={"products/branding#bus-shelter"} className='block text-center'>
                             <img className='w-24 mx-auto' src={getIcon("bus-shelter.png")} alt="" />
                             <p className="font-medium">Bus shelter</p>
-
-                        </div>
-                        <div className='text-center'>
+                        </Link>
+                        <Link to={"products/branding"} className='block text-center'>
                             <img className='w-24 mx-auto' src={getIcon("digital.png")} alt="" />
                             <p className="font-medium">Digital</p>
-                        </div>
-                        <div className='text-center'>
+                        </Link>
+                        <Link to={"products/lamp-poles"} className='block text-center'>
                             <img className='w-24 mx-auto' src={getIcon("lamp-pole.png")} alt="" />
                             <p className="font-medium">Lamp pole</p>
 
-                        </div>
-                        <div className='text-center'>
+                        </Link>
+                        <Link to={"products/iconic-structure"} className=' text-center'>
                             <img className='w-24 mx-auto' src={getIcon("iconic-board.png")} alt="" />
                             <p className="font-medium">Iconic board</p>
-                        </div>
+                        </Link>
 
                     </div>
                 </div>
